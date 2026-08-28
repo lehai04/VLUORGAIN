@@ -233,13 +233,13 @@ export default function HeroSection() {
             </svg>
 
             {/* Headline Tier 1: "MỞ RA" */}
-            <div className="relative z-10 text-white font-black text-[64px] sm:text-[84px] md:text-[104px] lg:text-[118px] leading-[0.88] tracking-[-0.04em] uppercase">
+            <div className="relative z-10 text-white font-black text-[44px] sm:text-[76px] md:text-[96px] lg:text-[116px] leading-[0.88] tracking-[-0.04em] uppercase">
               MỞ RA
             </div>
 
             {/* Headline Tier 2: "HÀNH TRÌNH MỚI" (Expressive Red Brush Script) */}
             <div
-              className="relative z-20 text-[#E52C47] italic font-black text-[42px] sm:text-[56px] md:text-[72px] lg:text-[82px] leading-[0.9] tracking-[-0.03em] -mt-2 sm:-mt-4 ml-3 sm:ml-6 transform -rotate-[2.5deg] drop-shadow-[0_4px_24px_rgba(229,44,71,0.6)]"
+              className="relative z-20 text-[#E52C47] italic font-black text-[30px] sm:text-[50px] md:text-[68px] lg:text-[80px] leading-[0.9] tracking-[-0.03em] -mt-1 sm:-mt-3 ml-2 sm:ml-6 transform -rotate-[2.5deg] drop-shadow-[0_4px_24px_rgba(229,44,71,0.6)]"
               style={{
                 textShadow: "0 0 35px rgba(229,44,71,0.7), 0 0 10px rgba(255,255,255,0.4)",
               }}
@@ -248,31 +248,31 @@ export default function HeroSection() {
             </div>
 
             {/* Headline Tier 3: "CÙNG VĂN LANG" */}
-            <div className="relative z-10 text-white font-black text-[48px] sm:text-[68px] md:text-[82px] lg:text-[96px] leading-[0.92] tracking-[-0.04em] uppercase mt-1 sm:mt-2">
+            <div className="relative z-10 text-white font-black text-[34px] sm:text-[60px] md:text-[78px] lg:text-[94px] leading-[0.92] tracking-[-0.04em] uppercase mt-1 sm:mt-2">
               CÙNG VĂN LANG
             </div>
           </div>
 
           {/* Supporting Slogan: "Nơi bạn được nhìn thấy" ✦ */}
-          <div className="flex items-center gap-2 mb-3">
-            <h3 className="text-white text-[20px] sm:text-[23px] md:text-[25px] font-bold tracking-tight m-0">
+          <div className="flex items-center gap-2 mb-2 sm:mb-3">
+            <h3 className="text-white text-[18px] sm:text-[22px] md:text-[25px] font-bold tracking-tight m-0">
               Nơi bạn được nhìn thấy
             </h3>
-            <span className="text-[#E52C47] text-xl drop-shadow-[0_0_8px_#E52C47]">
+            <span className="text-[#E52C47] text-lg sm:text-xl drop-shadow-[0_0_8px_#E52C47]">
               ✦
             </span>
           </div>
 
           {/* Descriptive Copy */}
-          <p className="text-[#C5C9D6] text-[14.5px] sm:text-[16px] leading-relaxed max-w-xl mb-8">
+          <p className="text-[#C5C9D6] text-[14px] sm:text-[16px] leading-relaxed max-w-xl mb-6 sm:mb-8">
             Đồng hành tài trợ cùng VLU, kết nối thương hiệu với hàng nghìn sinh viên và cộng đồng trẻ năng động.
           </p>
 
-          {/* PRIMARY CTA (ONLY ONE BUTTON - NO RECAP/PLAY) */}
+          {/* PRIMARY CTA (ONLY ONE BUTTON - FULL WIDTH ON MOBILE) */}
           <div className="flex items-center gap-4">
             <a
               href="#journey"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-[#10132B]/80 hover:bg-[#E52C47] border-[1.5px] border-[#E52C47] text-white font-bold text-[14px] sm:text-[15px] uppercase tracking-wider rounded-xl shadow-[0_0_24px_rgba(229,44,71,0.35)] hover:shadow-[0_0_36px_rgba(229,44,71,0.7)] transition-all duration-300"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4 bg-[#10132B]/80 hover:bg-[#E52C47] border-[1.5px] border-[#E52C47] text-white font-bold text-[13.5px] sm:text-[15px] uppercase tracking-wider rounded-xl shadow-[0_0_24px_rgba(229,44,71,0.35)] hover:shadow-[0_0_36px_rgba(229,44,71,0.7)] transition-all duration-300 min-h-[48px]"
             >
               <span>Khám phá cơ hội đồng hành</span>
               <span className="text-[#E52C47] group-hover:text-white transition-colors">
@@ -284,22 +284,22 @@ export default function HeroSection() {
       </div>
 
       {/* 4. BOTTOM INFORMATION PANEL & BRAND MARK */}
-      <div className="relative z-20 w-full max-w-[1780px] mx-auto px-6 sm:px-10 lg:px-16 pb-10 flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+      <div className="relative z-20 w-full max-w-[1780px] mx-auto px-5 sm:px-8 lg:px-16 pb-8 sm:pb-10 flex flex-col lg:flex-row lg:items-end justify-between gap-6 sm:gap-8">
         
         {/* Left Information Glass Panel (~64% Width) */}
-        <div className="w-full lg:w-[68%] xl:w-[65%] bg-[#0B0E23]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-5 sm:p-6 shadow-[0_16px_40px_rgba(0,0,0,0.6)]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-4 items-center">
+        <div className="w-full lg:w-[68%] xl:w-[65%] bg-[#0B0E23]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-4 sm:p-6 shadow-[0_16px_40px_rgba(0,0,0,0.6)]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 items-center">
             
             {/* Column 01: Date & Time */}
-            <div className="flex items-start gap-3.5 pr-2 sm:border-r border-white/10 relative">
-              <div className="w-10 h-10 rounded-xl bg-[#E52C47]/10 text-[#E52C47] flex items-center justify-center flex-shrink-0 mt-0.5">
-                <CalendarDays size={20} strokeWidth={2.2} />
+            <div className="flex items-start gap-3.5 border-b sm:border-b-0 sm:border-r border-white/10 pb-3 sm:pb-0 pr-0 sm:pr-2 relative">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#E52C47]/10 text-[#E52C47] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <CalendarDays size={19} strokeWidth={2.2} />
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-white font-extrabold text-[17px] sm:text-[18px] tracking-tight leading-tight">
+                <div className="text-white font-extrabold text-[16px] sm:text-[18px] tracking-tight leading-tight">
                   26–27.09.2026
                 </div>
-                <div className="text-[#98A2B3] text-[12.5px] mt-1 font-medium">
+                <div className="text-[#98A2B3] text-[12px] sm:text-[12.5px] mt-0.5 sm:mt-1 font-medium">
                   08:00 - 21:00
                 </div>
               </div>
@@ -307,21 +307,21 @@ export default function HeroSection() {
             </div>
 
             {/* Column 02: Venue Sessions */}
-            <div className="flex items-start gap-3.5 pr-2 sm:border-r border-white/10 relative">
-              <div className="w-10 h-10 rounded-xl bg-[#E52C47]/10 text-[#E52C47] flex items-center justify-center flex-shrink-0 mt-0.5">
-                <MapPin size={20} strokeWidth={2.2} />
+            <div className="flex items-start gap-3.5 border-b sm:border-b-0 sm:border-r border-white/10 pb-3 sm:pb-0 pr-0 sm:pr-2 relative">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#E52C47]/10 text-[#E52C47] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <MapPin size={19} strokeWidth={2.2} />
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-white font-bold text-[13.5px] leading-tight truncate">
+                <div className="text-white font-bold text-[13px] sm:text-[13.5px] leading-tight truncate">
                   Hội trường Trịnh Công Sơn
                 </div>
-                <div className="text-[#98A2B3] text-[11.5px] mb-1">
+                <div className="text-[#98A2B3] text-[11px] sm:text-[11.5px] mb-1">
                   14:00 - 26/09
                 </div>
-                <div className="text-white font-bold text-[13.5px] leading-tight truncate">
+                <div className="text-white font-bold text-[13px] sm:text-[13.5px] leading-tight truncate">
                   Quảng trường Đông Sơn
                 </div>
-                <div className="text-[#98A2B3] text-[11.5px]">
+                <div className="text-[#98A2B3] text-[11px] sm:text-[11.5px]">
                   14:00 - 27/09
                 </div>
               </div>
@@ -329,15 +329,15 @@ export default function HeroSection() {
             </div>
 
             {/* Column 03: Audience Scale */}
-            <div className="flex items-start gap-3.5 pr-2 sm:border-r border-white/10 relative">
-              <div className="w-10 h-10 rounded-xl bg-[#E52C47]/10 text-[#E52C47] flex items-center justify-center flex-shrink-0 mt-0.5">
-                <Users size={20} strokeWidth={2.2} />
+            <div className="flex items-start gap-3.5 border-b sm:border-b-0 sm:border-r border-white/10 pb-3 sm:pb-0 pr-0 sm:pr-2 relative">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#E52C47]/10 text-[#E52C47] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <Users size={19} strokeWidth={2.2} />
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-white font-extrabold text-[16px] sm:text-[17px] tracking-tight leading-tight">
+                <div className="text-white font-extrabold text-[15px] sm:text-[17px] tracking-tight leading-tight">
                   Hàng nghìn
                 </div>
-                <div className="text-[#98A2B3] text-[12px] mt-1 font-medium leading-snug">
+                <div className="text-[#98A2B3] text-[11.5px] sm:text-[12px] mt-0.5 sm:mt-1 font-medium leading-snug">
                   Sinh viên tham dự<br />& cộng đồng trẻ
                 </div>
               </div>
@@ -345,15 +345,15 @@ export default function HeroSection() {
             </div>
 
             {/* Column 04: Activities & Experiences */}
-            <div className="flex items-start gap-3.5">
-              <div className="w-10 h-10 rounded-xl bg-[#E52C47]/10 text-[#E52C47] flex items-center justify-center flex-shrink-0 mt-0.5">
-                <Megaphone size={20} strokeWidth={2.2} />
+            <div className="flex items-start gap-3.5 pt-1 sm:pt-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#E52C47]/10 text-[#E52C47] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <Megaphone size={19} strokeWidth={2.2} />
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-white font-extrabold text-[15px] sm:text-[16px] tracking-tight leading-tight">
+                <div className="text-white font-extrabold text-[14.5px] sm:text-[16px] tracking-tight leading-tight">
                   Nhiều hoạt động
                 </div>
-                <div className="text-[#98A2B3] text-[12px] mt-1 font-medium leading-snug">
+                <div className="text-[#98A2B3] text-[11.5px] sm:text-[12px] mt-0.5 sm:mt-1 font-medium leading-snug">
                   Bùng nổ trải nghiệm<br />& kết nối thương hiệu
                 </div>
               </div>

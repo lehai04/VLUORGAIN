@@ -222,11 +222,11 @@ export default function ContactSection() {
               CỘT PHẢI (RIGHT HERO IMAGE): ~56% CHIỀU RỘNG
           ==================================================== */}
           <div className="lg:col-span-7 xl:col-span-7 relative reveal">
-            {/* Hero Container with Custom Asymmetric Curves (120px 0 120px 120px) */}
+            {/* Hero Container with Custom Asymmetric Curves (Responsive clamp) */}
             <div
-              className="relative w-full h-[520px] sm:h-[580px] md:h-[640px] lg:h-[700px] xl:h-[730px] overflow-hidden shadow-[0_24px_60px_rgba(18,41,79,0.12)] border border-[rgba(255,255,255,0.8)]"
+              className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[730px] overflow-hidden shadow-[0_24px_60px_rgba(18,41,79,0.12)] border border-[rgba(255,255,255,0.8)]"
               style={{
-                borderRadius: "120px 0 120px 120px",
+                borderRadius: "clamp(40px, 9vw, 120px) 0 clamp(40px, 9vw, 120px) clamp(40px, 9vw, 120px)",
               }}
             >
               {/* Campus Photo Background from available assets */}
@@ -252,7 +252,7 @@ export default function ContactSection() {
 
               {/* Logo VLU Mounted on Building Facade covering the old sign */}
               <div
-                className="absolute top-[23%] left-[52%] sm:top-[22%] sm:left-[51%] transform -translate-x-1/2 -translate-y-1/2 z-10 flex items-center bg-[#D71920] px-4 py-2.5 rounded-xl shadow-xl border border-white/20"
+                className="absolute top-[23%] left-[52%] sm:top-[22%] sm:left-[51%] transform -translate-x-1/2 -translate-y-1/2 z-10 flex items-center bg-[#D71920] px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl shadow-xl border border-white/20"
                 aria-hidden="true"
               >
                 <Image
@@ -261,28 +261,28 @@ export default function ContactSection() {
                   width={150}
                   height={40}
                   unoptimized
-                  className="h-6 sm:h-7 w-auto object-contain brightness-0 invert"
+                  className="h-5 sm:h-7 w-auto object-contain brightness-0 invert"
                 />
               </div>
 
               {/* Top-Right Floating Quote Box (Bo lệch góc dưới trái) */}
               <div
-                className="absolute top-0 right-0 w-[230px] sm:w-[260px] md:w-[280px] p-6 sm:p-7 md:p-8 bg-[rgba(255,255,255,0.88)] backdrop-blur-md z-10"
+                className="absolute top-0 right-0 w-[170px] sm:w-[220px] md:w-[280px] p-4 sm:p-6 md:p-8 bg-[rgba(255,255,255,0.88)] backdrop-blur-md z-10"
                 style={{
-                  borderRadius: "0 0 0 54px",
+                  borderRadius: "0 0 0 clamp(32px, 5vw, 54px)",
                 }}
               >
-                <p className="text-[#3A4B68] text-[18px] sm:text-[20px] md:text-[21px] leading-[1.45] m-0 font-semibold opacity-90">
+                <p className="text-[#3A4B68] text-[14.5px] sm:text-[18px] md:text-[21px] leading-[1.4] sm:leading-[1.45] m-0 font-semibold opacity-90">
                   Kiến tạo<br />
                   những giá trị<br />
                   tốt đẹp hơn
                 </p>
-                <div className="w-[34px] h-[2px] bg-[#B0BAC8] rounded-full mt-3.5" aria-hidden="true" />
+                <div className="w-[28px] sm:w-[34px] h-[2px] bg-[#B0BAC8] rounded-full mt-2.5 sm:mt-3.5" aria-hidden="true" />
               </div>
 
               {/* Bottom-Left Script Overlay Text: "Together for a greater future" */}
-              <div className="absolute bottom-10 sm:bottom-12 left-10 sm:left-14 z-10 max-w-xs">
-                <div className="text-white italic font-extrabold text-[34px] sm:text-[40px] md:text-[46px] leading-[1.08] tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.5)]">
+              <div className="absolute bottom-6 sm:bottom-10 md:bottom-12 left-6 sm:left-10 md:left-14 z-10 max-w-xs">
+                <div className="text-white italic font-extrabold text-[26px] sm:text-[36px] md:text-[46px] leading-[1.08] tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.5)]">
                   Together<br />
                   for a greater<br />
                   future
@@ -290,7 +290,7 @@ export default function ContactSection() {
                 {/* Hand-drawn white underline svg */}
                 <svg
                   viewBox="0 0 160 14"
-                  className="w-[140px] sm:w-[160px] h-3.5 text-white mt-1 drop-shadow-md"
+                  className="w-[110px] sm:w-[140px] md:w-[160px] h-3.5 text-white mt-1 drop-shadow-md"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2.5"
@@ -303,12 +303,12 @@ export default function ContactSection() {
 
               {/* Lower-Right Organic Flowing White Wave Shape with "VAN LANG UNIVERSITY" */}
               <div
-                className="absolute bottom-0 right-0 w-[240px] sm:w-[300px] h-[100px] sm:h-[120px] bg-gradient-to-t from-white via-white/95 to-transparent flex items-end justify-end p-6 pr-8 z-10 pointer-events-none"
+                className="absolute bottom-0 right-0 w-[180px] sm:w-[240px] md:w-[300px] h-[80px] sm:h-[100px] md:h-[120px] bg-gradient-to-t from-white via-white/95 to-transparent flex items-end justify-end p-4 sm:p-6 pr-6 sm:pr-8 z-10 pointer-events-none"
                 style={{
-                  borderRadius: "100px 0 0 0",
+                  borderRadius: "clamp(60px, 10vw, 100px) 0 0 0",
                 }}
               >
-                <span className="text-[#8E9CAE] font-bold text-[11px] sm:text-[12px] tracking-[0.16em] uppercase">
+                <span className="text-[#8E9CAE] font-bold text-[9.5px] sm:text-[11px] md:text-[12px] tracking-[0.16em] uppercase">
                   VAN LANG UNIVERSITY
                 </span>
               </div>
