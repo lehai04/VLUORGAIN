@@ -373,18 +373,6 @@ export default function HeroSection() {
           </a>
         </div>
       </div>
-
-      {/* 5. BOTTOM RIGHT OFFICIAL 3D LOGO & LASER BEAM (mini logo.png - True 1/3 Mini Scale) */}
-      <div className="absolute right-2 bottom-2 sm:right-6 sm:bottom-6 lg:right-10 lg:bottom-8 w-[85px] sm:w-[110px] md:w-[135px] lg:w-[160px] xl:w-[180px] pointer-events-none z-10 select-none mix-blend-screen opacity-95">
-        <Image
-          src="/images/hoi-khai-giang-2025/mini logo.png"
-          alt="VLU 3D Luminous Brand Logo"
-          width={180}
-          height={100}
-          unoptimized
-          className="w-full h-auto object-contain object-right-bottom"
-        />
-      </div>
     </section>
   );
 }
