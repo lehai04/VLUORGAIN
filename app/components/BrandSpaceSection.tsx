@@ -71,10 +71,7 @@ export default function BrandSpaceSection({
             <h2 id="brand-space-title">Không gian<br />thương hiệu</h2>
             <i className="brandSpaceRule" aria-hidden="true" />
             <p>
-              Quảng trường Đông Sơn – địa điểm tổ chức {" "}<br />
-              Hội Khai giảng ngày 27/09/2026. Hình ảnh {" "}<br />
-              sự kiện tham chiếu từ chương trình Chào đón {" "}<br />
-              Tân sinh viên Khóa 31 năm 2025.
+              Quảng trường Đông Sơn – địa điểm tổ chức Hội Khai giảng ngày 27/09/2026. Hình ảnh sự kiện tham chiếu từ chương trình Chào đón Tân sinh viên Khóa 31 năm 2025.
             </p>
             {/* Nút bấm mở phóng to ảnh Backdrop */}
             <button
