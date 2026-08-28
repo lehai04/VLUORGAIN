@@ -32,6 +32,7 @@ import PriorityResourceSection from "./PriorityResourceSection";
 import PartnershipSection from "./partnership/PartnershipSection";
 import ContactSection from "./ContactSection";
 import HeroSection from "./HeroSection";
+import RoadTimelineSection from "./RoadTimelineSection";
 
 // Icon cho 6 thẻ thống kê quy mô Section 02
 const statIcons = [Users, GraduationCap, Handshake, Star, CalendarDays, ChartNoAxesCombined];
@@ -226,19 +227,8 @@ export default function Landing() {
         <p className="legal">Mọi quyền lợi chỉ có hiệu lực sau khi được cấp có thẩm quyền của Nhà trường phê duyệt và thể hiện trong văn bản chính thức.</p>
       </section>
 
-      {/* 12. LỘ TRÌNH TRIỂN KHAI (EVENT TIMELINE) */}
-      <section className="section">
-        <SectionHead n="12 · LỘ TRÌNH">Từ đề xuất đến ngày hội</SectionHead>
-        <div className="eventTimeline">
-          {timeline.map((t) => (
-            <article className="reveal" key={t[0]}>
-              <b>{t[0]}</b>
-              <i />
-              <p>{t[1]}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+      {/* 12. LỘ TRÌNH TRIỂN KHAI (EVENT ROADMAP TIMELINE) */}
+      <RoadTimelineSection />
 
       {/* 13. THÔNG TIN LIÊN HỆ & BẾ MẠC PROPOSAL (LET'S PARTNER) */}
       <ContactSection />
