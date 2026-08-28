@@ -361,84 +361,29 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Right Corner: Luminous VLU Brand Mark, Diagonal Laser Beam & Scroll Indicator */}
-        <div className="relative flex items-end justify-between lg:justify-end gap-8 pb-2">
-          {/* Diagonal Laser Beam & Glowing Brand Shield */}
-          <div className="relative flex items-center justify-center">
-            {/* Outer Red Glowing Neon Laser Beam */}
-            <div
-              className="absolute -inset-x-24 h-4 bg-gradient-to-r from-transparent via-[#E52C47] to-transparent transform -rotate-[34deg] pointer-events-none"
-              style={{
-                boxShadow: "0 0 24px #E52C47, 0 0 55px #E52C47, 0 0 85px rgba(229,44,71,0.7)",
-              }}
-              aria-hidden="true"
-            />
-            {/* Intense White Core Laser Streak */}
-            <div
-              className="absolute -inset-x-24 h-1 bg-gradient-to-r from-transparent via-white to-transparent transform -rotate-[34deg] pointer-events-none opacity-90"
-              style={{
-                boxShadow: "0 0 10px #FFFFFF",
-              }}
-              aria-hidden="true"
-            />
-
-            {/* Stylized Luminous VLU Chim Lạc Emblem (Exact match to Reference Image 1) */}
-            <div className="relative z-10 w-28 h-24 flex items-center justify-center drop-shadow-[0_0_32px_rgba(229,44,71,0.95)]">
-              <svg viewBox="0 0 140 100" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="vlu-white-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#FFFFFF" />
-                    <stop offset="70%" stopColor="#F8FAFC" />
-                    <stop offset="100%" stopColor="#E2E8F0" />
-                  </linearGradient>
-                  <linearGradient id="vlu-red-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#FF334B" />
-                    <stop offset="100%" stopColor="#D71920" />
-                  </linearGradient>
-                </defs>
-
-                {/* Left Wing Top Red Accent */}
-                <path
-                  d="M 22 28 L 46 28 L 62 48 L 38 42 Z"
-                  fill="url(#vlu-red-gradient)"
-                />
-
-                {/* Left Wing Main White Blade */}
-                <path
-                  d="M 26 38 L 70 94 L 56 48 L 38 42 Z"
-                  fill="url(#vlu-white-gradient)"
-                />
-
-                {/* Center V Red Recessed Core */}
-                <path
-                  d="M 56 48 L 70 94 L 82 44 L 70 68 Z"
-                  fill="url(#vlu-red-gradient)"
-                />
-
-                {/* Right Wing Main White Blade */}
-                <path
-                  d="M 70 94 L 126 22 L 90 22 L 82 44 Z"
-                  fill="url(#vlu-white-gradient)"
-                />
-
-                {/* Right Wing Top Stepped Blade */}
-                <path
-                  d="M 88 22 L 126 22 L 110 32 L 80 32 Z"
-                  fill="#FFFFFF"
-                />
-              </svg>
-            </div>
-          </div>
-
+        {/* Right Corner: Scroll Indicator */}
+        <div className="relative z-20 flex items-end justify-between lg:justify-end gap-8 pb-2">
           {/* Scroll Hint */}
           <a
             href="#story"
-            className="flex items-center gap-2 text-white/70 hover:text-white text-[11.5px] font-bold tracking-[0.2em] uppercase transition-colors"
+            className="flex items-center gap-2 text-white/80 hover:text-white text-[11.5px] font-bold tracking-[0.2em] uppercase transition-colors drop-shadow-md"
           >
             <span>CUỘN ĐỂ KHÁM PHÁ</span>
             <Mouse size={15} className="animate-bounce text-[#E52C47]" />
           </a>
         </div>
+      </div>
+
+      {/* 5. BOTTOM RIGHT OFFICIAL 3D LOGO & LASER BEAM (mini logo.png) */}
+      <div className="absolute right-0 bottom-0 w-[420px] sm:w-[560px] md:w-[700px] lg:w-[840px] xl:w-[920px] pointer-events-none z-10 select-none mix-blend-screen opacity-95">
+        <Image
+          src="/images/hoi-khai-giang-2025/mini logo.png"
+          alt="VLU 3D Luminous Brand Logo"
+          width={920}
+          height={520}
+          unoptimized
+          className="w-full h-auto object-contain object-right-bottom"
+        />
       </div>
     </section>
   );
