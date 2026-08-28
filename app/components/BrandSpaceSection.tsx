@@ -114,18 +114,6 @@ export default function BrandSpaceSection({
                     ? "(max-width: 767px) 100vw, (max-width: 1279px) 92vw, 64vw"
                     : "(max-width: 767px) 100vw, (max-width: 1279px) 46vw, 32vw"}
                 />
-                {/* Huy hiệu Logo VLU hiển thị góc trên ảnh chính */}
-                {index === 0 && (
-                  <span className="brandSpaceLogoBadge" aria-hidden="true">
-                    <Image
-                      src="/images/hoi-khai-giang-2025/Lpgo_VLU.png"
-                      alt=""
-                      width={92}
-                      height={24}
-                      unoptimized
-                    />
-                  </span>
-                )}
                 <span className="brandSpaceImageLabel">{image.label}</span>
                 <span className="brandSpaceAccent" aria-hidden="true" />
               </button>
