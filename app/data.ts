@@ -78,7 +78,7 @@ export const brandSpaceImages = [
   },
   {
     id: "club",
-    src: "/images/hoi-khai-giang-2025/6.4.jpg",
+    src: "/images/hoi-khai-giang-2025/64.jpg",
     alt: "Không gian câu lạc bộ sinh viên Văn Lang 2025",
     label: "Gian hàng và CLB",
   },

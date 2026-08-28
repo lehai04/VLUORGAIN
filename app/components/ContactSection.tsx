@@ -67,15 +67,15 @@ export default function ContactSection() {
             {/* 2. Main Heading (3 Lines) - Single Unified Font (Be Vietnam Pro) */}
             <h2
               id="contact-main-heading"
-              className="text-[#12294F] text-[42px] sm:text-[50px] md:text-[56px] xl:text-[62px] leading-[1.05] tracking-[-0.03em] m-0 font-extrabold"
+              className="text-[#12294F] text-[34px] sm:text-[44px] md:text-[50px] xl:text-[58px] leading-[1.08] tracking-[-0.035em] m-0 font-extrabold"
             >
-              <span className="block text-[#12294F] font-extrabold">
+              <span className="block text-[#12294F] font-extrabold whitespace-nowrap">
                 Cùng Văn Lang tạo
               </span>
-              <span className="block italic font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#E52C47] via-[#EA4258] to-[#F27C6F] my-0.5">
+              <span className="block italic font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#E52C47] via-[#EA4258] to-[#F27C6F] my-0.5 whitespace-nowrap">
                 nên một khởi đầu
               </span>
-              <span className="block text-[#12294F] font-extrabold">
+              <span className="block text-[#12294F] font-extrabold whitespace-nowrap">
                 đáng nhớ
               </span>
             </h2>
