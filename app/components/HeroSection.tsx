@@ -373,16 +373,18 @@ export default function HeroSection() {
               }}
               aria-hidden="true"
             />
-            {/* Official Luminous VLU Shield Brand Mark */}
-            <div className="relative z-10 w-20 h-20 drop-shadow-[0_0_28px_rgba(229,44,71,0.9)]">
-              <Image
-                src="/images/hoi-khai-giang-2025/logo-vlu 2.png"
-                alt="VLU Brand Shield"
-                width={80}
-                height={80}
-                unoptimized
-                className="w-full h-full object-contain brightness-0 invert drop-shadow-lg"
-              />
+            {/* Stylized Luminous VLU V-Wing Symbol (Restored original) */}
+            <div className="relative z-10 w-20 h-20 drop-shadow-[0_0_28px_rgba(229,44,71,0.8)]">
+              <svg viewBox="0 0 80 80" className="w-full h-full text-white fill-current">
+                <path
+                  d="M 12 18 L 32 64 L 40 48 L 48 64 L 68 18 L 56 18 L 40 52 L 24 18 Z"
+                  fill="#FFFFFF"
+                />
+                <path
+                  d="M 28 18 L 40 42 L 52 18 L 46 18 L 40 30 L 34 18 Z"
+                  fill="#E52C47"
+                />
+              </svg>
             </div>
           </div>
 
