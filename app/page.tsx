@@ -1,21 +1,14 @@
-// Internal workspace sites can read the authenticated OpenAI user from the
-// forwarded request headers:
-//
-// import { headers } from "next/headers";
-//
-// export default async function Home() {
-//   const requestHeaders = await headers();
-//   const email = requestHeaders.get("oai-authenticated-user-email");
-//   const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-//   const fullName =
-//     encodedFullName &&
-//     requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-//       "percent-encoded-utf-8"
-//       ? decodeURIComponent(encodedFullName)
-//       : null;
-//   const displayName = fullName ?? email;
-//   // ...
-// }
+/**
+ * ==============================================================================
+ * ROUTE: TRANG CHỦ CHÍNH (/)
+ * ------------------------------------------------------------------------------
+ * Render component Landing chứa toàn bộ nội dung của trang Hội Khai giảng 2026.
+ * ==============================================================================
+ */
 
 import Landing from "./components/Landing";
-export default function Home() { return <Landing />; }
+
+export default function Home() {
+  return <Landing />;
+}
+
