@@ -36,7 +36,7 @@ interface RoadmapItem {
 const roadmapData: RoadmapItem[] = [
   {
     id: 1,
-    date: "25–28/08",
+    date: "Chờ xác nhận",
     label: "Phê duyệt proposal",
     icon: FileCheck2,
     theme: "red",
@@ -46,7 +46,7 @@ const roadmapData: RoadmapItem[] = [
   },
   {
     id: 2,
-    date: "28/08–11/09",
+    date: "Chờ xác nhận",
     label: "Tiếp cận & đàm phán",
     icon: UsersRound,
     theme: "navy",
@@ -56,7 +56,7 @@ const roadmapData: RoadmapItem[] = [
   },
   {
     id: 3,
-    date: "12/09",
+    date: "Chờ xác nhận",
     label: "Chốt nhà tài trợ",
     icon: ClipboardCheck,
     theme: "red",
@@ -66,7 +66,7 @@ const roadmapData: RoadmapItem[] = [
   },
   {
     id: 4,
-    date: "13–18/09",
+    date: "Chờ xác nhận",
     label: "Hợp đồng, logo & hiện vật",
     icon: FilePenLine,
     theme: "navy",
@@ -76,7 +76,7 @@ const roadmapData: RoadmapItem[] = [
   },
   {
     id: 5,
-    date: "15/09",
+    date: "Chờ xác nhận",
     label: "Chốt sơ đồ không gian",
     icon: ScanLine,
     theme: "red",
@@ -86,7 +86,7 @@ const roadmapData: RoadmapItem[] = [
   },
   {
     id: 6,
-    date: "19–25/09",
+    date: "Chờ xác nhận",
     label: "Sản xuất & tổng duyệt",
     icon: Clapperboard,
     theme: "navy",
@@ -96,7 +96,7 @@ const roadmapData: RoadmapItem[] = [
   },
   {
     id: 7,
-    date: "26–27/09",
+    date: "Dự kiến 26–27/09",
     label: "Hội Khai giảng",
     icon: GraduationCap,
     theme: "highlight-red",
@@ -106,7 +106,7 @@ const roadmapData: RoadmapItem[] = [
   },
   {
     id: 8,
-    date: "30–45 ngày",
+    date: "Theo thỏa thuận",
     label: "Nghiệm thu & báo cáo",
     icon: FileChartColumn,
     theme: "red-outline",

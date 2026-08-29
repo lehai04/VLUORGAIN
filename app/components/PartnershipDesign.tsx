@@ -86,7 +86,7 @@ export default function PartnershipDesign() {
             <h2 id="partnership-title">Bắt đầu từ mục tiêu<br />của doanh nghiệp</h2>
             <p>
               Chọn mục tiêu ưu tiên để xem cấu trúc quyền lợi phù hợp.<br />
-              Văn Lang không bán một danh sách logo giống nhau cho mọi thương hiệu.
+              Văn Lang không áp dụng một danh mục quyền lợi giống nhau cho mọi đối tác. Mỗi phương án đồng hành sẽ được xây dựng dựa trên mục tiêu, ngành hàng và giá trị mà doanh nghiệp mong muốn đóng góp cho sinh viên.
             </p>
           </div>
 

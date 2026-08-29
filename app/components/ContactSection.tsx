@@ -6,7 +6,7 @@
  * - Nền trắng ivory (#FBFAF8) sáng sủa, thanh lịch, nhiều khoảng trắng.
  * - Bố cục 2 cột:
  *   + Cột trái: Heading serif 3 dòng (dòng giữa italic gradient đỏ), thông tin
- *     đầu mối tài trợ, 2 link CTA gạch chân đỏ, 3 kênh liên hệ kèm circle icon
+ *     đầu mối hợp tác, CTA liên hệ trực tiếp, 3 kênh liên hệ kèm circle icon
  *     và hộp QR code minh họa kết nối form.
  *   + Cột phải: Hero image khuôn viên Văn Lang với hình khối bo cong bất đối xứng
  *     (120px 0 120px 120px), text script "Together for a greater future",
@@ -67,15 +67,15 @@ export default function ContactSection() {
             {/* 2. Main Heading (3 Lines) - Single Unified Font (Be Vietnam Pro) */}
             <h2
               id="contact-main-heading"
-              className="text-[#12294F] text-[34px] sm:text-[44px] md:text-[50px] xl:text-[58px] leading-[1.08] tracking-[-0.035em] m-0 font-extrabold"
+              className="text-[#12294F] text-[30px] min-[390px]:text-[34px] sm:text-[44px] md:text-[50px] xl:text-[58px] leading-[1.1] tracking-[-0.035em] m-0 font-extrabold"
             >
-              <span className="block text-[#12294F] font-extrabold whitespace-nowrap">
+              <span className="block text-[#12294F] font-extrabold sm:whitespace-nowrap">
                 Cùng Văn Lang tạo
               </span>
-              <span className="block italic font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#E52C47] via-[#EA4258] to-[#F27C6F] my-0.5 whitespace-nowrap">
+              <span className="block italic font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#E52C47] via-[#EA4258] to-[#F27C6F] my-0.5 sm:whitespace-nowrap">
                 nên một khởi đầu
               </span>
-              <span className="block text-[#12294F] font-extrabold whitespace-nowrap">
+              <span className="block text-[#12294F] font-extrabold sm:whitespace-nowrap">
                 đáng nhớ
               </span>
             </h2>
@@ -88,33 +88,13 @@ export default function ContactSection() {
 
             {/* 4. Contact Person */}
             <p className="text-[#5A6A86] text-[16px] md:text-[17.5px] font-medium leading-relaxed mb-6 md:mb-7">
-              Đầu mối tài trợ · Nguyễn Thu Hiền · Trung tâm Hỗ trợ Sinh viên
+              Đầu mối hợp tác · Nguyễn Thu Hiền · Trung tâm Hỗ trợ Sinh viên
             </p>
 
-            {/* 5. CTA Text Links Row */}
-            <div className="flex flex-wrap items-center gap-6 sm:gap-9 mb-8 md:mb-9">
-              <a
-                href="/VLU-Hoi-Khai-Giang-2026-Proposal-Draft.txt"
-                download
-                className="group inline-flex items-center gap-2 pb-2.5 border-b-[1.5px] border-[rgba(229,44,71,0.4)] text-[#12294F] font-semibold text-[15.5px] md:text-[16.5px] transition-colors hover:text-[#E52C47] hover:border-[#E52C47]"
-              >
-                <span>Tải hồ sơ tài trợ</span>
-                <span className="text-[#E52C47] transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </a>
-
-              <button
-                type="button"
-                onClick={() => setIsContactModalOpen(true)}
-                className="group inline-flex items-center gap-2 pb-2.5 border-b-[1.5px] border-[rgba(229,44,71,0.4)] text-[#12294F] font-semibold text-[15.5px] md:text-[16.5px] transition-colors hover:text-[#E52C47] hover:border-[#E52C47] bg-transparent cursor-pointer"
-              >
-                <span>Liên hệ Ban Tổ chức</span>
-                <span className="text-[#E52C47] transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </button>
-            </div>
+            {/* 5. Tiêu đề thuần cho nhóm thông tin, không phải button hoặc liên kết. */}
+            <h3 className="text-[#12294F] font-semibold text-[15.5px] md:text-[16.5px] mb-8 md:mb-9">
+              Thông tin liên hệ
+            </h3>
 
             {/* 6. Contact Details (Email, Phone, Website) */}
             <div className="flex flex-col gap-4 md:gap-4.5 mb-8 md:mb-9">
@@ -171,6 +151,7 @@ export default function ContactSection() {
 
             {/* 7. QR Code Box */}
             <div
+              hidden
               onClick={() => setIsContactModalOpen(true)}
               className="group flex items-center gap-4 p-3.5 pr-5 max-w-[390px] bg-white rounded-2xl border border-[rgba(20,40,70,0.09)] shadow-[0_6px_24px_rgba(18,41,79,0.04)] hover:shadow-[0_10px_32px_rgba(229,44,71,0.08)] hover:border-[rgba(229,44,71,0.3)] transition-all cursor-pointer"
             >
@@ -320,7 +301,7 @@ export default function ContactSection() {
       {/* ====================================================
           MODAL FORM ĐĂNG KÝ / LIÊN HỆ BAN TỔ CHỨC
       ==================================================== */}
-      {isContactModalOpen && (
+      {false && isContactModalOpen && (
         <div
           className="fixed inset-0 z-50 bg-[#08153B]/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6"
           onClick={() => setIsContactModalOpen(false)}

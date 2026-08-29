@@ -120,11 +120,11 @@ export interface PartnershipSpirit {
 // 1. STAT BADGES & OVERVIEW
 // ----------------------------------------------------
 export const partnershipStats = [
-  { label: "Gói hợp tác", value: "05", desc: "Từ Trình diện đến Đồng hành hạng mục" },
+  { label: "Gói hợp tác", value: "05", desc: "Từ Đối tác Đồng hành Chính đến Đồng hành Hạng mục" },
   { label: "Quyền lợi nền tảng", value: "25", desc: "R01 – R25 phân loại minh bạch" },
   { label: "Signature Assets", value: "12", desc: "A01 – A12 cấp A/B/C độc quyền trải nghiệm" },
   { label: "Quyền lợi ma trận", value: "15", desc: "M01 – M15 đối chiếu rõ ràng" },
-  { label: "Điều khoản nguyên tắc", value: "15", desc: "T01 – T15 cam kết chuẩn mực" },
+  { label: "Điều khoản nguyên tắc", value: "15", desc: "T01 – T15 làm cơ sở xây dựng phương án hợp tác" },
 ];
 
 // ----------------------------------------------------
@@ -133,17 +133,17 @@ export const partnershipStats = [
 export const packagesData: PackageDetail[] = [
   {
     id: "P1",
-    name: "Đối tác Trình diện",
+    name: "Đối tác Đồng hành Chính",
     price: "300 triệu VNĐ",
     slots: "01 suất",
-    role: "Dẫn dắt hành trình thương hiệu tại Convocation Day 2026.",
+    role: "Đồng hành ở cấp độ cao nhất và hiện diện xuyên suốt hành trình sự kiện.",
     isPopular: false,
     highlight: [
       "Signature Asset cấp A độc quyền",
       "Danh xưng Presenting Partner chính thức",
       "Khu trải nghiệm độc quyền lên đến 6 × 6 m",
       "01 Partner Story riêng & flagship activation",
-      "Dedicated Impact Report đo lường độc lập",
+      "Báo cáo ghi nhận kết quả thực hiện quyền lợi",
     ],
     overview: {
       code: "P1",
@@ -156,7 +156,7 @@ export const packagesData: PackageDetail[] = [
     ownership: {
       distinctRight: "Quyền sở hữu độc quyền 01 Signature Asset Cấp A và định danh Presenting Partner trong toàn bộ ấn phẩm sự kiện.",
       signatureAsset: "01 Signature Asset Cấp A (Đông Sơn Welcome Portal / Seen at VLU Studio / K32 Discovery Passport).",
-      industryExclusivity: "Độc quyền tuyệt đối trong ngành hàng chính của doanh nghiệp tại sự kiện.",
+      industryExclusivity: "Độc quyền ngành hàng theo phạm vi và điều kiện được hai bên thống nhất.",
       priorityRight: "Ưu tiên chọn vị trí không gian trưng bày trung tâm đẹp nhất tại Quảng trường Đông Sơn.",
     },
     benefits: {
@@ -173,16 +173,16 @@ export const packagesData: PackageDetail[] = [
         "Khu vực tiếp đón đại biểu VIP riêng dành cho 04 lãnh đạo doanh nghiệp",
         "Được phép phối hợp cùng Talent/KOL sinh viên Văn Lang trải nghiệm booth",
       ],
-      scope: "Toàn bộ 2 ngày sự kiện (26–27/09/2026) và chuỗi truyền thông trước – sau sự kiện.",
+      scope: "Toàn bộ hai ngày sự kiện dự kiến 26–27/09/2026 và chuỗi truyền thông trước – sau sự kiện.",
     },
     measurement: {
       kpi: [
-        "Tiếp cận trực tiếp: 10.000+ sinh viên và khách mời",
+        "Tiếp cận trực tiếp: 10.000+ người tham dự",
         "Tiếp cận truyền thông trực tuyến: 1.000.000+ lượt hiển thị",
         "Lượt tương tác tại Flagship Booth: 3.500+ lượt trải nghiệm thực tế",
       ],
       deliverables: [
-        "Báo cáo Dedicated Impact Report riêng biệt sau 30 ngày",
+        "Báo cáo kết quả thực hiện quyền lợi theo thời hạn trong thỏa thuận hợp tác",
         "Bộ ảnh và video chất lượng cao ghi lại toàn bộ hoạt động của thương hiệu",
         "Danh sách thống kê số lượt tương tác hợp lệ tại gian hàng",
       ],
@@ -198,8 +198,8 @@ export const packagesData: PackageDetail[] = [
         "Nội dung chi tiết của bài viết truyền thông Partner Story",
       ],
       coordinationConditions: [
-        "Cung cấp logo định dạng vector và tài liệu nhận diện trước 10/09/2026",
-        "Hoàn tất thi công gian hàng trước 17:00 ngày 25/09/2026",
+        "Cung cấp logo định dạng vector và tài liệu nhận diện theo timeline được Ban Tổ chức xác nhận",
+        "Hoàn tất thi công gian hàng theo timeline được Ban Tổ chức xác nhận",
       ],
       limitations: [
         "Không bán hàng thu tiền trực tiếp tại sự kiện",
@@ -216,7 +216,7 @@ export const packagesData: PackageDetail[] = [
     name: "Đối tác Dấu ấn",
     price: "200 triệu VNĐ",
     slots: "Tối đa 04 suất",
-    role: "Sở hữu một trải nghiệm biểu tượng và tạo dấu ấn rõ nét.",
+    role: "Sở hữu một điểm chạm nổi bật, tạo dấu ấn nhận diện rõ nét.",
     isPopular: true,
     highlight: [
       "Signature Asset cấp A hoặc B",
@@ -256,7 +256,7 @@ export const packagesData: PackageDetail[] = [
     },
     measurement: {
       kpi: [
-        "Tiếp cận 10.000+ sinh viên",
+        "Tiếp cận 10.000+ người tham dự",
         "Tiếp cận truyền thông: 500.000+ lượt hiển thị",
         "Tương tác booth: 2.000+ lượt tham gia hoạt động",
       ],
@@ -274,7 +274,7 @@ export const packagesData: PackageDetail[] = [
         "Kế hoạch phân bổ quà tặng / mẫu thử sản phẩm",
       ],
       coordinationConditions: [
-        "Gửi hồ sơ thiết kế booth trước 15/09/2026 để BTC phê duyệt kỹ thuật",
+        "Gửi hồ sơ thiết kế booth theo timeline được Ban Tổ chức xác nhận để phê duyệt kỹ thuật",
       ],
       limitations: [
         "Không thu thập dữ liệu sinh viên ngoài khuôn khổ opt-in tự nguyện",
@@ -289,7 +289,7 @@ export const packagesData: PackageDetail[] = [
     name: "Đối tác Tác động",
     price: "100 triệu VNĐ",
     slots: "Tối đa 05 suất",
-    role: "Tạo giá trị cụ thể và câu chuyện tác động cho sinh viên.",
+    role: "Cùng Nhà trường tạo ra giá trị thiết thực và câu chuyện tác động dành cho sinh viên.",
     isPopular: false,
     highlight: [
       "Quỹ Học bổng / Impact Asset ý nghĩa",
@@ -321,7 +321,7 @@ export const packagesData: PackageDetail[] = [
       ],
       specificRights: [
         "Ghi nhận trong thông cáo báo chí và bài viết recap về chương trình học bổng",
-        "02 Thư mời VIP tham dự Lễ Khai giảng chính thức ngày 26/09",
+        "02 Thư mời VIP tham dự Lễ Khai giảng theo lịch được Ban Tổ chức xác nhận",
       ],
       scope: "Lễ Khai giảng chính thức và truyền thông chuyên đề Học bổng.",
     },
@@ -343,7 +343,7 @@ export const packagesData: PackageDetail[] = [
         "Tiêu chí xét chọn sinh viên nhận học bổng (theo ngành, hoàn cảnh, tài năng)",
       ],
       coordinationConditions: [
-        "Chuyển kinh phí học bổng hiện kim về tài khoản Nhà trường trước 18/09/2026",
+        "Chuyển kinh phí học bổng hiện kim về tài khoản Nhà trường theo tiến độ trong thỏa thuận hợp tác",
       ],
       limitations: [
         "Học bổng chỉ tiếp nhận bằng tiền mặt, không sử dụng voucher thay thế",
@@ -358,14 +358,14 @@ export const packagesData: PackageDetail[] = [
     name: "Đối tác Trải nghiệm",
     price: "50 triệu VNĐ",
     slots: "Tối đa 08 suất",
-    role: "Tương tác trực tiếp tại khu trải nghiệm sinh viên.",
+    role: "Tương tác trực tiếp với sinh viên thông qua không gian và hoạt động trải nghiệm.",
     isPopular: false,
     highlight: [
       "Booth tiêu chuẩn đến 3 × 3 m",
       "Hoạt động activation tối đa 4 giờ",
       "Phát mẫu thử / product trial",
       "Logo nhóm đối tác trên ấn phẩm",
-      "Báo cáo tương tác khả dụng",
+      "Báo cáo số lượt tương tác được ghi nhận thực tế",
     ],
     overview: {
       code: "P4",
@@ -392,7 +392,7 @@ export const packagesData: PackageDetail[] = [
         "Ghi nhận tên thương hiệu trong bài viết tổng kết ngày hội",
         "01 Thư mời tham dự ngày hội",
       ],
-      scope: "Ngày hội trải nghiệm ngày 27/09/2026 tại Quảng trường Đông Sơn.",
+      scope: "Ngày hội trải nghiệm theo thời gian và địa điểm được Ban Tổ chức xác nhận.",
     },
     measurement: {
       kpi: [
@@ -412,7 +412,7 @@ export const packagesData: PackageDetail[] = [
         "Kế hoạch sampling và danh mục sản phẩm trưng bày",
       ],
       coordinationConditions: [
-        "Đăng ký danh sách nhân sự trực booth trước 20/09/2026",
+        "Đăng ký danh sách nhân sự trực booth theo timeline được Ban Tổ chức xác nhận",
       ],
       limitations: [
         "Tuyệt đối không bán hàng, thu tiền hoặc kinh doanh dịch vụ tại gian hàng",
@@ -427,7 +427,7 @@ export const packagesData: PackageDetail[] = [
     name: "Đồng hành Hạng mục",
     price: "30 triệu VNĐ",
     slots: "Tối đa 12 suất",
-    role: "Đồng hành một nhu cầu cụ thể của sự kiện.",
+    role: "Đồng hành cùng một nhu cầu hoặc hạng mục cụ thể của chương trình.",
     isPopular: false,
     highlight: [
       "Hiện vật / vật phẩm / dịch vụ thiết thực",
@@ -479,7 +479,7 @@ export const packagesData: PackageDetail[] = [
         "Chủng loại, hạn sử dụng và phương thức giao nhận hiện vật",
       ],
       coordinationConditions: [
-        "Bàn giao hiện vật về kho của BTC tại Trường trước ngày 24/09/2026",
+        "Bàn giao hiện vật về kho của BTC tại Trường theo timeline được Ban Tổ chức xác nhận",
       ],
       limitations: [
         "Không tiếp nhận hiện vật gần hết hạn sử dụng hoặc không rõ nguồn gốc",
@@ -499,7 +499,7 @@ export const signatureAssetsData: SignatureAsset[] = [
     id: "A01",
     tier: "A",
     name: "Đông Sơn Welcome Portal",
-    shortIdea: "Cổng chào biểu tượng và trạm check-in công nghệ hoành tráng chào đón 10.000+ sinh viên.",
+    shortIdea: "Cổng chào biểu tượng và trạm check-in công nghệ chào đón 10.000+ người tham dự.",
     priceRange: "80 – 120 triệu VNĐ",
     slots: "01 suất độc quyền",
     priority: "Ưu tiên P1",
@@ -511,7 +511,7 @@ export const signatureAssetsData: SignatureAsset[] = [
     activities: ["Trải nghiệm quét mã check-in nhận quà tức thì", "Chụp ảnh lấy ngay tại kiosk tương tác"],
     proofOfDelivery: ["Biên bản nghiệm thu thi công cổng", "Thống kê lượt quét mã tương tác", "Bộ ảnh toàn cảnh"],
     limitations: ["Không che khuất lối thoát hiểm và biểu tượng đại học"],
-    coordinationConditions: ["Duyệt thiết kế 3D trước ngày 12/09/2026"],
+    coordinationConditions: ["Duyệt thiết kế 3D theo timeline được Ban Tổ chức xác nhận"],
   },
   {
     id: "A02",
@@ -547,7 +547,7 @@ export const signatureAssetsData: SignatureAsset[] = [
     activities: ["Hành trình check-in qua các trạm CLB & Doanh nghiệp để nhận dấu mộc và đổi quà"],
     proofOfDelivery: ["Mẫu passport thực tế nghiệm thu", "Biên bản bàn giao số lượng ấn phẩm"],
     limitations: ["Nội dung thử thách phải lành mạnh, khuyến khích vận động và kết nối"],
-    coordinationConditions: ["Hoàn thiện nội dung in ấn trước ngày 10/09/2026"],
+    coordinationConditions: ["Hoàn thiện nội dung in ấn theo timeline được Ban Tổ chức xác nhận"],
   },
   {
     id: "A04",
@@ -565,7 +565,7 @@ export const signatureAssetsData: SignatureAsset[] = [
     activities: ["Chia sẻ phương pháp học đại học, quản lý tài chính sinh viên và xây dựng CV sớm"],
     proofOfDelivery: ["Bản báo cáo số lượt tải e-book và biên bản nghiệm thu workshop"],
     limitations: ["Diễn giả và nội dung phải được Ban Giám hiệu duyệt trước"],
-    coordinationConditions: ["Gửi đề cương workshop trước 05/09/2026"],
+    coordinationConditions: ["Gửi đề cương workshop theo timeline được Ban Tổ chức xác nhận"],
   },
   {
     id: "A05",
@@ -673,7 +673,7 @@ export const signatureAssetsData: SignatureAsset[] = [
     activities: ["Phát quà tại khu vực Check-in Hội trường Trịnh Công Sơn và Đông Sơn"],
     proofOfDelivery: ["Biên bản kiểm đếm và phát tận tay sinh viên"],
     limitations: ["Sản phẩm có giá trị sử dụng thiết thực, không phát tờ rơi đơn thuần"],
-    coordinationConditions: ["Giao vật phẩm trước ngày 20/09/2026"],
+    coordinationConditions: ["Giao vật phẩm theo timeline được Ban Tổ chức xác nhận"],
   },
   {
     id: "A11",
@@ -701,15 +701,15 @@ export const signatureAssetsData: SignatureAsset[] = [
     priceRange: "60 – 100 triệu VNĐ",
     slots: "01 suất độc quyền",
     priority: "Ưu tiên P1/P2",
-    ownership: "Độc quyền đồng hành cùng đại cảnh bùng nổ nhất đêm đại nhạc hội 27/09.",
+    ownership: "Đồng hành cùng đại cảnh đêm đại nhạc hội theo phạm vi và lịch được Ban Tổ chức xác nhận.",
     targetIndustries: ["Bia / Nước giải khát cao cấp", "Smartphone", "Âm thanh ánh sáng", "Lifestyle"],
     deliverables: ["Hiệu ứng pháo sáng lạnh / Visual LED 3D độc quyền", "Khoảnh khắc thương hiệu xuất hiện cao trào cùng nghệ sĩ", "Video highlight triệu view sau đêm diễn"],
-    kpi: ["10.000+ sinh viên hòa nhịp tại quảng trường", "500.000+ lượt xem video recap đêm nhạc"],
+    kpi: ["10.000+ người tham dự hòa nhịp tại quảng trường", "500.000+ lượt xem video recap đêm nhạc"],
     branding: ["Logo xuất hiện tại khoảnh khắc countdown và visual đỉnh cao", "Kêu gọi tên thương hiệu từ MC chương trình"],
     activities: ["Kích hoạt màn trình diễn ánh sáng đồng loạt với vòng tay phát sáng của sinh viên"],
     proofOfDelivery: ["Video nghiệm thu chất lượng cao 4K", "Báo cáo tiếp cận trên mạng xã hội"],
     limitations: ["Hiệu ứng ánh sáng và sân khấu do đạo diễn chương trình phối hợp điều phối an toàn"],
-    coordinationConditions: ["Tổng duyệt kỹ thuật sân khấu tối 25/09/2026"],
+    coordinationConditions: ["Tổng duyệt kỹ thuật sân khấu theo timeline được Ban Tổ chức xác nhận"],
   },
 ];
 
@@ -737,13 +737,13 @@ export const benefitsData: BenefitItem[] = [
     exclusivity: "Phân cấp kích thước theo thứ bậc gói",
     description: "Hiển thị logo trên backdrop check-in trung tâm, cổng chào Quảng trường Đông Sơn và Hội trường Trịnh Công Sơn.",
     proofOfDelivery: "Ảnh chụp nghiệm thu tại hiện trường trước giờ khai mạc.",
-    appliedConditions: "Cung cấp file vector chuẩn trước ngày 10/09/2026.",
+    appliedConditions: "Cung cấp file vector chuẩn theo timeline được Ban Tổ chức xác nhận.",
   },
   {
     id: "R03",
     group: "Không gian & Nhận diện",
     name: "Logo & Visual trên Màn hình LED Sân khấu",
-    distinctPoint: "Xuất hiện liên tục trên màn hình LED siêu lớn trong suốt 2 ngày sự kiện.",
+    distinctPoint: "Được bố trí nhận diện trên màn hình LED theo thời lượng và kịch bản được Ban Tổ chức phê duyệt.",
     fitPackages: ["P1", "P2", "P3", "P4"],
     exclusivity: "P1 & P2 chiếm sóng trung tâm",
     description: "Hiển thị logo tĩnh và visual động luân phiên trong các phiên lễ, giờ giải lao và đại nhạc hội.",
@@ -754,7 +754,7 @@ export const benefitsData: BenefitItem[] = [
     id: "R04",
     group: "Không gian & Nhận diện",
     name: "Khu vực gian hàng Flagship (6 × 6 m)",
-    distinctPoint: "Không gian trưng bày đẳng cấp tại vị trí đắc địa nhất Quảng trường Đông Sơn.",
+    distinctPoint: "Không gian trưng bày tại vị trí ưu tiên theo sơ đồ mặt bằng được phê duyệt.",
     fitPackages: ["P1"],
     exclusivity: "01 vị trí duy nhất",
     description: "Diện tích 36m² cho phép thiết kế mô hình 3D sáng tạo, thu hút toàn bộ dòng người di chuyển.",
@@ -780,7 +780,7 @@ export const benefitsData: BenefitItem[] = [
     fitPackages: ["P3", "P4"],
     exclusivity: "Theo sơ đồ phân bổ",
     description: "Khu vực 9m² phù hợp đặt quầy trưng bày, standee và mini-game tương tác.",
-    proofOfDelivery: "Biên bản nghiệm thu gian hàng ngày 27/09.",
+    proofOfDelivery: "Biên bản nghiệm thu gian hàng theo lịch tổ chức được xác nhận.",
     appliedConditions: "Không lấn chiếm lối đi chung ngoài diện tích được cấp.",
   },
   {
@@ -792,7 +792,7 @@ export const benefitsData: BenefitItem[] = [
     exclusivity: "Số lượng vé VIP giới hạn",
     description: "Chỗ ngồi hàng ghế danh dự tại Hội trường Trịnh Công Sơn và phòng khánh tiết đại biểu.",
     proofOfDelivery: "Thẻ đại biểu VIP và hình ảnh đón tiếp.",
-    appliedConditions: "Đăng ký danh sách khách mời trước 18/09/2026.",
+    appliedConditions: "Đăng ký danh sách khách mời theo timeline được Ban Tổ chức xác nhận.",
   },
   {
     id: "R08",
@@ -831,12 +831,12 @@ export const benefitsData: BenefitItem[] = [
     id: "R11",
     group: "Trải nghiệm & Kích hoạt",
     name: "Phát sóng TVC trên Màn hình LED chính",
-    distinctPoint: "Tiếp cận 10.000+ sinh viên vào các thời điểm vàng trước và sau các tiết mục lớn.",
+    distinctPoint: "Tiếp cận 10.000+ người tham dự vào các thời điểm phù hợp trước và sau các tiết mục lớn.",
     fitPackages: ["P1", "P2"],
     exclusivity: "Thời lượng: P1 60s, P2 30s",
     description: "Phát sóng video clip giới thiệu doanh nghiệp với âm thanh sống động trên hệ thống màn hình LED sự kiện.",
     proofOfDelivery: "Log lịch phát sóng và video quay thực tế tại sự kiện.",
-    appliedConditions: "Nội dung TVC được duyệt trước ngày 15/09/2026.",
+    appliedConditions: "Nội dung TVC được duyệt theo timeline được Ban Tổ chức xác nhận.",
   },
   {
     id: "R12",
@@ -943,7 +943,7 @@ export const benefitsData: BenefitItem[] = [
     name: "Độc quyền ngành hàng (Category Exclusivity)",
     distinctPoint: "Bảo đảm là thương hiệu duy nhất trong phân khúc ngành hàng xuất hiện tại sự kiện.",
     fitPackages: ["P1", "P2"],
-    exclusivity: "P1 độc quyền tuyệt đối, P2 có điều kiện",
+    exclusivity: "Độc quyền ngành hàng theo phạm vi và điều kiện được hai bên thống nhất",
     description: "Cam kết không tiếp nhận các đối thủ cạnh tranh trực tiếp cùng ngành hàng tài trợ chính.",
     proofOfDelivery: "Phụ lục cam kết độc quyền đính kèm hợp đồng.",
     appliedConditions: "Xác nhận sau khi rà soát danh mục ngành hàng cụ thể giữa hai bên.",
@@ -962,12 +962,12 @@ export const benefitsData: BenefitItem[] = [
   {
     id: "R23",
     group: "Dịch vụ & Nghiệm thu",
-    name: "Dedicated Impact Report (Báo cáo Đo lường Độc lập)",
+    name: "Impact Report (Báo cáo ghi nhận kết quả thực hiện quyền lợi)",
     distinctPoint: "Báo cáo số liệu toàn diện, trực quan hóa ROI và hiệu quả tiếp cận thực tế.",
     fitPackages: ["P1"],
     exclusivity: "Bản báo cáo thiết kế riêng chuyên sâu",
     description: "Bao gồm số liệu tiếp cận trực tiếp, tương tác online, đo lường truyền thông và đánh giá hiệu quả chiến dịch.",
-    proofOfDelivery: "File PDF Impact Report chất lượng cao gửi sau 30 ngày.",
+    proofOfDelivery: "File PDF báo cáo kết quả thực hiện quyền lợi gửi theo thời hạn trong thỏa thuận hợp tác.",
     appliedConditions: "Được tổng hợp từ dữ liệu đo lường đa kênh của Ban Tổ chức.",
   },
   {
@@ -979,7 +979,7 @@ export const benefitsData: BenefitItem[] = [
     exclusivity: "Theo gói tài trợ",
     description: "Tổng hợp toàn bộ hình ảnh nghiệm thu hiện trường, đường link bài viết và số liệu tương tác cơ bản.",
     proofOfDelivery: "Biên bản nghiệm thu hoàn thành nghĩa vụ tài trợ.",
-    appliedConditions: "Bàn giao trong vòng 30–45 ngày sau sự kiện.",
+    appliedConditions: "Bàn giao theo thời hạn được thống nhất trong thỏa thuận hợp tác.",
   },
   {
     id: "R25",
@@ -1001,15 +1001,15 @@ export const packageMatrixData: MatrixRow[] = [
   {
     id: "M01",
     name: "Danh xưng hợp tác chính thức",
-    p1: "Presenting Partner (Độc quyền)",
-    p2: "Signature Partner (Dấu ấn)",
-    p3: "Impact Partner (Tác động)",
-    p4: "Experience Partner (Trải nghiệm)",
-    p5: "Category Partner (Đồng hành)",
+    p1: "Đối tác Đồng hành Chính",
+    p2: "Đối tác Dấu ấn",
+    p3: "Đối tác Tác động",
+    p4: "Đối tác Trải nghiệm",
+    p5: "Đồng hành Hạng mục",
     implementation: "Quy định rõ trong hợp đồng và áp dụng chuẩn xác trên mọi ấn phẩm truyền thông, MC script.",
     proofOfDelivery: "Văn bản công nhận danh xưng và market ấn phẩm sự kiện.",
     customDiscussion: "Thống nhất tên thương hiệu phụ / nhãn hàng con đi kèm danh xưng.",
-    coordinationConditions: "Cung cấp Guideline thương hiệu trước ngày 10/09/2026.",
+    coordinationConditions: "Cung cấp guideline thương hiệu theo timeline được Ban Tổ chức xác nhận.",
     appendixTerms: "Điều khoản quyền sử dụng hình ảnh và danh xưng trong 06 tháng sau sự kiện.",
   },
   {
@@ -1023,7 +1023,7 @@ export const packageMatrixData: MatrixRow[] = [
     implementation: "Bàn giao toàn quyền định danh và tổ chức không gian tại Signature Asset được duyệt.",
     proofOfDelivery: "Hồ sơ thiết kế và hình ảnh nghiệm thu thực tế Asset.",
     customDiscussion: "Lựa chọn Asset cụ thể trong danh mục A01–A12.",
-    coordinationConditions: "Chốt lựa chọn Asset trước ngày 12/09/2026.",
+    coordinationConditions: "Chốt lựa chọn Asset theo timeline được Ban Tổ chức xác nhận.",
     appendixTerms: "Quy định về bảo quản thiết bị và an toàn vận hành tại khu vực Asset.",
   },
   {
@@ -1037,13 +1037,13 @@ export const packageMatrixData: MatrixRow[] = [
     implementation: "Phân bổ mặt bằng tại Quảng trường Đông Sơn kèm nguồn điện 220V cơ bản.",
     proofOfDelivery: "Biên bản bàn giao mặt bằng trước sự kiện và nghiệm thu sau sự kiện.",
     customDiscussion: "Vị trí chính xác trên sơ đồ tổng thể và nhu cầu phụ tải điện công suất cao.",
-    coordinationConditions: "Gửi sơ đồ bố trí trước ngày 15/09/2026.",
+    coordinationConditions: "Gửi sơ đồ bố trí theo timeline được Ban Tổ chức xác nhận.",
     appendixTerms: "Quy định không bán hàng thu tiền trực tiếp và không phát loa vượt 85dB.",
   },
   {
     id: "M04",
     name: "Flagship / Branded Activation",
-    p1: "Toàn quyền 2 ngày sự kiện",
+    p1: "Ưu tiên triển khai hoạt động trong hai ngày theo phương án được thống nhất",
     p2: "Sở hữu 1 điểm chạm chính",
     p3: "Mini Activation",
     p4: "Tối đa 4 giờ tương tác",
@@ -1057,15 +1057,15 @@ export const packageMatrixData: MatrixRow[] = [
   {
     id: "M05",
     name: "Nhận diện Màn hình LED Sân khấu",
-    p1: "TVC 60s + Logo trung tâm",
-    p2: "TVC 30s + Logo lớn",
+    p1: "TVC tối đa 60 giây và vị trí logo ưu tiên theo kịch bản chương trình",
+    p2: "TVC tối đa 30 giây và vị trí logo theo kịch bản chương trình",
     p3: "Logo nhóm đối tác",
     p4: "Logo nhóm đối tác",
     p5: "—",
     implementation: "Phát sóng video clip và hiển thị logo trên màn hình LED chính tại Quảng trường & Hội trường.",
     proofOfDelivery: "Bảng phân bổ thời lượng phát sóng (cue-sheet) và clip ghi hình hiện trường.",
     customDiscussion: "Khung giờ phát sóng TVC ưu tiên (trước giờ khai mạc, giờ giải lao, đêm nhạc).",
-    coordinationConditions: "Gửi video định dạng MP4 Full HD trước ngày 15/09/2026.",
+    coordinationConditions: "Gửi video định dạng MP4 Full HD theo timeline được Ban Tổ chức xác nhận.",
     appendixTerms: "Nội dung video không chứa hình ảnh bạo lực, quảng cáo thuốc lá/chất kích thích.",
   },
   {
@@ -1079,7 +1079,7 @@ export const packageMatrixData: MatrixRow[] = [
     implementation: "In ấn trực tiếp trên hệ thống backdrop bạt hiflex chất lượng cao và cổng chào 3D.",
     proofOfDelivery: "Ảnh chụp cận cảnh logo trên các ấn phẩm thực tế.",
     customDiscussion: "Kiểm tra màu sắc logo test print trước khi in hàng loạt.",
-    coordinationConditions: "Gửi file logo định dạng AI/EPS/PDF vector trước ngày 10/09/2026.",
+    coordinationConditions: "Gửi file logo định dạng AI/EPS/PDF vector theo timeline được Ban Tổ chức xác nhận.",
     appendixTerms: "Nhận diện tuân thủ quy chuẩn Brand Guidelines của Trường Đại học Văn Lang.",
   },
   {
@@ -1121,7 +1121,7 @@ export const packageMatrixData: MatrixRow[] = [
     implementation: "Đại diện ban lãnh đạo doanh nghiệp lên sân khấu nhận hoa và trao biểu trưng học bổng.",
     proofOfDelivery: "Hình ảnh sân khấu nghi thức và giấy xác nhận trao học bổng.",
     customDiscussion: "Cơ cấu giá trị từng suất học bổng và tiêu chí xét chọn sinh viên.",
-    coordinationConditions: "Chuyển kinh phí học bổng về tài khoản trường trước ngày 18/09/2026.",
+    coordinationConditions: "Chuyển kinh phí học bổng về tài khoản trường theo tiến độ trong thỏa thuận hợp tác.",
     appendixTerms: "Học bổng trao bằng hiện kim, không thay thế bằng voucher mua sắm.",
   },
   {
@@ -1149,7 +1149,7 @@ export const packageMatrixData: MatrixRow[] = [
     implementation: "Bố trí chỗ ngồi danh dự hàng ghế đầu tại Lễ Khai giảng Hội trường Trịnh Công Sơn.",
     proofOfDelivery: "Thẻ đại biểu phát hành chính thức và hình ảnh đón tiếp tại khu vực VIP.",
     customDiscussion: "Danh sách họ tên và chức danh chính xác của đại biểu doanh nghiệp.",
-    coordinationConditions: "Xác nhận danh sách tham dự trước ngày 18/09/2026.",
+    coordinationConditions: "Xác nhận danh sách tham dự theo timeline được Ban Tổ chức xác nhận.",
     appendixTerms: "Trang phục lịch sự, trang trọng (vest/áo dài/công sở).",
   },
   {
@@ -1163,13 +1163,13 @@ export const packageMatrixData: MatrixRow[] = [
     implementation: "Đóng gói trực tiếp vật phẩm của doanh nghiệp vào 7.000 túi quà tân sinh viên.",
     proofOfDelivery: "Biên bản kiểm đếm đóng gói và mẫu túi quà thực tế.",
     customDiscussion: "Quy cách kích thước và tính hữu dụng của vật phẩm tài trợ.",
-    coordinationConditions: "Bàn giao vật phẩm về kho trường trước ngày 20/09/2026.",
+    coordinationConditions: "Bàn giao vật phẩm về kho trường theo timeline được Ban Tổ chức xác nhận.",
     appendixTerms: "Không chèn tài liệu mang tính chất quảng cáo quá đà hoặc phản cảm.",
   },
   {
     id: "M13",
     name: "Độc quyền Ngành hàng",
-    p1: "Độc quyền tuyệt đối",
+    p1: "Độc quyền ngành hàng theo phạm vi và điều kiện được hai bên thống nhất",
     p2: "Độc quyền có điều kiện",
     p3: "—",
     p4: "—",
@@ -1177,13 +1177,13 @@ export const packageMatrixData: MatrixRow[] = [
     implementation: "Cam kết không nhận tài trợ từ các thương hiệu đối thủ cạnh tranh trực tiếp.",
     proofOfDelivery: "Phụ lục cam kết độc quyền ngành hàng đính kèm hợp đồng.",
     customDiscussion: "Xác định rõ ràng mã ngành kinh doanh chính được bảo hộ độc quyền.",
-    coordinationConditions: "Ký kết hợp đồng và thanh toán đợt 1 trước ngày 10/09/2026.",
+    coordinationConditions: "Ký kết hợp đồng và thanh toán đợt 1 theo tiến độ trong thỏa thuận hợp tác.",
     appendixTerms: "Độc quyền chỉ có hiệu lực sau khi Hội đồng phê duyệt hợp tác thông qua.",
   },
   {
     id: "M14",
     name: "Video Recap & Báo cáo hình ảnh",
-    p1: "Phân cảnh riêng 4K",
+    p1: "Phân cảnh nhận diện riêng trong video tổng kết, tùy điều kiện sản xuất thực tế",
     p2: "Xuất hiện trong Recap",
     p3: "Ảnh tư liệu hoàn chỉnh",
     p4: "Ảnh tư liệu cơ bản",
@@ -1205,7 +1205,7 @@ export const packageMatrixData: MatrixRow[] = [
     implementation: "Lập báo cáo số liệu tiếp cận, hình ảnh nghiệm thu và xác nhận hoàn thành trách nhiệm.",
     proofOfDelivery: "Bản báo cáo PDF có đóng dấu xác nhận của Trung tâm Hỗ trợ Sinh viên VLU.",
     customDiscussion: "Các chỉ số KPIs đặc thù mà doanh nghiệp cần theo dõi thêm.",
-    coordinationConditions: "Bàn giao trong vòng 30 đến 45 ngày làm việc sau sự kiện.",
+    coordinationConditions: "Bàn giao theo thời hạn trong thỏa thuận hợp tác.",
     appendixTerms: "Biên bản nghiệm thu là căn cứ pháp lý để hai bên thanh lý hợp đồng tài trợ.",
   },
 ];
@@ -1221,8 +1221,8 @@ export const partnershipTermsData: PartnershipTerm[] = [
     controlPurpose: "Giữ vững tính chất phi thương mại, tôn nghiêm của môi trường giáo dục đại học và ngày hội tân sinh viên.",
     appliedTo: "Tất cả các đối tác P1, P2, P3, P4, P5 và các gian hàng tham gia.",
     approver: "Trưởng Ban Tổ chức & Giám đốc Trung tâm Hỗ trợ Sinh viên.",
-    status: "Đã phê duyệt chính thức — Bắt buộc thực hiện.",
-    scope: "Toàn bộ khuôn viên Cơ sở chính VLU trong suốt 2 ngày sự kiện (26–27/09/2026).",
+    status: "Nguyên tắc bắt buộc",
+    scope: "Khuôn viên và hai ngày sự kiện theo phương án được Ban Tổ chức xác nhận.",
   },
   {
     id: "T02",
@@ -1231,7 +1231,7 @@ export const partnershipTermsData: PartnershipTerm[] = [
     controlPurpose: "Bảo vệ quyền riêng tư cá nhân và tuân thủ nghiêm ngặt Nghị định 13/2023/NĐ-CP về Bảo vệ dữ liệu cá nhân.",
     appliedTo: "Toàn bộ các gói tài trợ và hoạt động tương tác.",
     approver: "Hội đồng Pháp chế & Ban Giám hiệu Nhà trường.",
-    status: "Đã phê duyệt chính thức — Bắt buộc thực hiện.",
+    status: "Thực hiện theo quy định của Nhà trường",
     scope: "Áp dụng cho mọi hoạt động trước, trong và sau sự kiện.",
   },
   {
@@ -1241,8 +1241,8 @@ export const partnershipTermsData: PartnershipTerm[] = [
     controlPurpose: "Đảm bảo tính trang nghiêm, tập trung trọn vẹn vào nghi thức khai giảng và truyền cảm hứng cho tân sinh viên K32.",
     appliedTo: "Tất cả các đối tác và đại biểu doanh nghiệp.",
     approver: "Ban Giám hiệu Trường Đại học Văn Lang.",
-    status: "Đã phê duyệt chính thức — Không ngoại lệ.",
-    scope: "Sân khấu Hội trường Trịnh Công Sơn ngày 26/09/2026.",
+    status: "Nguyên tắc bắt buộc",
+    scope: "Sân khấu nghi lễ theo thời gian và địa điểm được Ban Tổ chức xác nhận.",
   },
   {
     id: "T04",
@@ -1251,7 +1251,7 @@ export const partnershipTermsData: PartnershipTerm[] = [
     controlPurpose: "Bảo đảm giá trị hỗ trợ thực chất, công bằng và trực tiếp đến đời sống học tập của sinh viên.",
     appliedTo: "Các đối tác tham gia gói P1, P3 và các đơn vị tài trợ học bổng riêng lẻ.",
     approver: "Phòng Quản lý Tài chính & Trung tâm Hỗ trợ Sinh viên.",
-    status: "Đã phê duyệt chính thức.",
+    status: "Áp dụng theo phương án được duyệt",
     scope: "Quỹ học bổng Convocation Day 2026.",
   },
   {
@@ -1261,17 +1261,17 @@ export const partnershipTermsData: PartnershipTerm[] = [
     controlPurpose: "Đảm bảo nguồn lực tài chính tiền mặt tối thiểu để trang trải chi phí vận hành hạ tầng sự kiện.",
     appliedTo: "Áp dụng cho các gói P1, P2, P4 khi có thỏa thuận hiện vật.",
     approver: "Trưởng Ban Tổ chức sự kiện.",
-    status: "Đã phê duyệt chính thức.",
+    status: "Thống nhất trong hợp đồng",
     scope: "Thẩm định trong quá trình đàm phán hợp đồng tài trợ.",
   },
   {
     id: "T06",
     topic: "Thời hạn chốt sơ đồ mặt bằng và thiết kế gian hàng",
-    proposedWording: "Toàn bộ bản vẽ thiết kế 3D, quy cách kết cấu, sơ đồ bố trí gian hàng và kế hoạch phụ tải điện phải được gửi về Ban Tổ chức trước 17:00 ngày 15/09/2026 để kiểm định an toàn kết cấu và PCCC trước khi tiến hành dàn dựng.",
+    proposedWording: "Toàn bộ bản vẽ thiết kế 3D, quy cách kết cấu, sơ đồ bố trí gian hàng và kế hoạch phụ tải điện phải được gửi về Ban Tổ chức theo timeline được xác nhận để kiểm định an toàn kết cấu và PCCC trước khi tiến hành dàn dựng.",
     controlPurpose: "Đảm bảo an toàn lao động, phòng chống cháy nổ và thẩm mỹ không gian Quảng trường Đông Sơn.",
     appliedTo: "Các đối tác có bố trí gian hàng (P1, P2, P3, P4).",
     approver: "Ban Quản lý Cơ sở vật chất & Trưởng Nhóm Hậu cần.",
-    status: "Đã phê duyệt chính thức.",
+    status: "Chờ Ban Tổ chức xác nhận timeline mới",
     scope: "Khuôn viên Quảng trường Đông Sơn.",
   },
   {
@@ -1281,7 +1281,7 @@ export const partnershipTermsData: PartnershipTerm[] = [
     controlPurpose: "Bảo vệ tính chuẩn mực của thương hiệu giáo dục và sự đồng bộ trong chiến dịch nhận diện.",
     appliedTo: "Tất cả các đối tác sử dụng hình ảnh sự kiện.",
     approver: "Phòng Truyền thông & Trung tâm Hỗ trợ Sinh viên VLU.",
-    status: "Đã phê duyệt chính thức.",
+    status: "Thực hiện theo quy định của Nhà trường",
     scope: "Toàn bộ các kênh truyền thông trực tuyến và ngoại tuyến.",
   },
   {
@@ -1291,7 +1291,7 @@ export const partnershipTermsData: PartnershipTerm[] = [
     controlPurpose: "Bảo vệ sức khỏe và sự an toàn tuyệt đối cho hơn 10.000 sinh viên và đại biểu tham dự.",
     appliedTo: "Tất cả các đối tác ngành F&B và sampling thực phẩm.",
     approver: "Trạm Y tế VLU & Trưởng Ban Tổ chức.",
-    status: "Đã phê duyệt chính thức — Tiêu chuẩn bắt buộc.",
+    status: "Thực hiện theo quy định của Nhà trường",
     scope: "Tại tất cả các trạm tiếp nước và booth ẩm thực.",
   },
   {
@@ -1299,9 +1299,9 @@ export const partnershipTermsData: PartnershipTerm[] = [
     topic: "Xác lập quyền độc quyền ngành hàng có điều kiện",
     proposedWording: "Quyền độc quyền ngành hàng chỉ có hiệu lực pháp lý khi được xác định rõ ràng mã ngành kinh doanh chính trong Phụ lục hợp đồng tài trợ và được Trưởng Ban Tổ chức phê duyệt bằng văn bản; không áp dụng độc quyền mặc nhiên cho các ngành hàng chưa đăng ký.",
     controlPurpose: "Tránh xung đột quyền lợi giữa các nhà tài trợ và tối ưu hóa cơ hội huy động nguồn lực.",
-    appliedTo: "Đối tác Gói P1 (độc quyền tuyệt đối) và P2 (độc quyền có điều kiện).",
+    appliedTo: "Đối tác Gói P1 và P2 theo phạm vi độc quyền ngành hàng được hai bên thống nhất.",
     approver: "Trưởng Ban Tổ chức & Ban Giám hiệu.",
-    status: "Đã phê duyệt chính thức.",
+    status: "Thống nhất trong hợp đồng",
     scope: "Quy định trong hợp đồng tài trợ chính thức.",
   },
   {
@@ -1311,17 +1311,17 @@ export const partnershipTermsData: PartnershipTerm[] = [
     controlPurpose: "Giữ gìn khuôn viên xanh - sạch - đẹp của trường đại học đạt chuẩn quốc tế.",
     appliedTo: "Tất cả các đơn vị thi công và nhân sự trực booth.",
     approver: "Ban Quản lý Cơ sở vật chất VLU.",
-    status: "Đã phê duyệt chính thức.",
+    status: "Thực hiện theo quy định của Nhà trường",
     scope: "Toàn bộ không gian sự kiện trước, trong và sau thi công.",
   },
   {
     id: "T11",
     topic: "Tiến độ chuyển kinh phí tài trợ và xuất hóa đơn tài chính",
-    proposedWording: "Kinh phí tài trợ được chuyển khoản trực tiếp vào tài khoản ngân hàng chính thức của Trường Đại học Văn Lang theo tiến độ: Đợt 1 (50%) trong vòng 07 ngày sau khi ký hợp đồng, Đợt 2 (50%) hoàn tất trước ngày 18/09/2026. Nhà trường cung cấp hóa đơn tài chính/phiếu thu hợp lệ.",
+    proposedWording: "Kinh phí tài trợ được chuyển khoản trực tiếp vào tài khoản ngân hàng chính thức của Trường Đại học Văn Lang theo tiến độ được thống nhất trong hợp đồng. Nhà trường cung cấp hóa đơn tài chính/phiếu thu hợp lệ.",
     controlPurpose: "Đảm bảo tính minh bạch tài chính, đúng quy định kế toán nhà nước và dòng tiền tổ chức.",
     appliedTo: "Tất cả các đối tác tài trợ hiện kim.",
     approver: "Phòng Quản lý Tài chính Trường Đại học Văn Lang.",
-    status: "Đã phê duyệt chính thức.",
+    status: "Thống nhất trong hợp đồng",
     scope: "Quy định trong điều khoản thanh toán hợp đồng.",
   },
   {
@@ -1331,17 +1331,17 @@ export const partnershipTermsData: PartnershipTerm[] = [
     controlPurpose: "Xác lập phạm vi bản quyền hình ảnh minh bạch và tôn trọng sở hữu trí tuệ của hai bên.",
     appliedTo: "Hai bên ký kết hợp đồng tài trợ.",
     approver: "Phòng Pháp chế & Truyền thông VLU.",
-    status: "Đã phê duyệt chính thức.",
+    status: "Thống nhất trong hợp đồng",
     scope: "Thời hạn 12 tháng kể từ ngày kết thúc sự kiện.",
   },
   {
     id: "T13",
     topic: "Thời hạn bàn giao báo cáo đo lường và hồ sơ nghiệm thu",
-    proposedWording: "Ban Tổ chức có trách nhiệm hoàn thiện và bàn giao Báo cáo nghiệm thu (Impact Report / Asset Report) kèm trọn bộ tư liệu ảnh, clip và xác nhận số liệu cho đối tác trong thời hạn từ 30 đến 45 ngày làm việc kể từ khi kết thúc ngày hội 27/09/2026.",
+    proposedWording: "Ban Tổ chức hoàn thiện và bàn giao báo cáo nghiệm thu kèm tư liệu ảnh, clip và số liệu được ghi nhận thực tế cho đối tác theo thời hạn trong thỏa thuận hợp tác.",
     controlPurpose: "Cam kết chất lượng dịch vụ đối tác và cung cấp đầy đủ chứng từ quyết toán đúng hạn.",
     appliedTo: "Tất cả các đối tác P1, P2, P3, P4, P5.",
     approver: "Giám đốc Trung tâm Hỗ trợ Sinh viên VLU.",
-    status: "Đã phê duyệt chính thức.",
+    status: "Thống nhất trong hợp đồng",
     scope: "Hậu kỳ và thanh lý hợp đồng.",
   },
   {
@@ -1351,7 +1351,7 @@ export const partnershipTermsData: PartnershipTerm[] = [
     controlPurpose: "Phòng ngừa rủi ro pháp lý và duy trì quan hệ hợp tác đối tác bền vững.",
     appliedTo: "Toàn bộ hợp đồng hợp tác sự kiện.",
     approver: "Ban Giám hiệu Trường Đại học Văn Lang.",
-    status: "Đã phê duyệt chính thức.",
+    status: "Áp dụng theo phương án được duyệt",
     scope: "Điều khoản bất khả kháng trong hợp đồng mẫu.",
   },
   {
@@ -1361,7 +1361,7 @@ export const partnershipTermsData: PartnershipTerm[] = [
     controlPurpose: "Bảo đảm tính pháp lý cao nhất, tránh các thỏa thuận miệng hoặc vượt thẩm quyền.",
     appliedTo: "Tất cả các giao dịch và cam kết tài trợ.",
     approver: "Hiệu trưởng / Người được ủy quyền theo quy chế VLU.",
-    status: "Đã phê duyệt chính thức — Nguyên tắc cốt lõi.",
+    status: "Thống nhất trong hợp đồng",
     scope: "Quy trình ký kết văn bản hợp tác chính thức.",
   },
 ];
@@ -1373,13 +1373,13 @@ export const partnerInvitationContent = {
   letter: {
     greeting: "Kính gửi Quý Doanh nghiệp, Tổ chức và Đối tác,",
     paragraphs: [
-      "Hội Khai giảng Trường Đại học Văn Lang 2026 là dấu mốc mở đầu cho hành trình học tập và trưởng thành của hơn 7.000 tân sinh viên Khóa 32, đồng thời là ngày hội kết nối cộng đồng Văn Lang với quy mô dự kiến hơn 10.000 người tham dự.",
-      "Với thông điệp “Nơi bạn được nhìn thấy”, chương trình không chỉ hướng đến một lễ khai giảng trang trọng, mà còn kiến tạo một không gian nơi mỗi tân sinh viên được chào đón, kết nối, trải nghiệm và cảm nhận rõ giá trị của cộng đồng mà mình chính thức trở thành một phần.",
-      "Trường Đại học Văn Lang trân trọng mời Quý Doanh nghiệp, Tổ chức và Đối tác cùng đồng hành trong hành trình này. Sự hiện diện và đóng góp của Quý Đơn vị không chỉ góp phần nâng cao chất lượng chương trình, mà còn tạo nên những trải nghiệm thiết thực, những điểm chạm ý nghĩa và những giá trị tích cực dành cho thế hệ sinh viên mới.",
-      "Chúng tôi tin rằng mỗi sự đồng hành đều có thể trở thành một dấu ấn được ghi nhớ, mở ra những kết nối bền vững giữa Nhà trường, doanh nghiệp và thế hệ trẻ trong tương lai.",
+      "Hội Khai giảng Trường Đại học Văn Lang 2026 là dấu mốc chào đón hơn 7.000 Tân sinh viên Khóa 32 chính thức gia nhập cộng đồng Văn Lang, đồng thời là ngày hội kết nối sinh viên, phụ huynh, giảng viên, khách mời và các tổ chức đồng hành.",
+      "Với thông điệp “Nơi bạn được nhìn thấy”, chương trình không chỉ là một nghi lễ khai giảng trang trọng, mà còn là không gian để mỗi tân sinh viên được chào đón, kết nối, trải nghiệm và cảm nhận mình là một phần của cộng đồng Văn Lang.",
+      "Trường Đại học Văn Lang trân trọng mời Quý Đơn vị cùng đồng hành kiến tạo những trải nghiệm thiết thực và ý nghĩa cho thế hệ sinh viên mới. Mỗi sự đóng góp, dù dưới hình thức học bổng, kinh phí, sản phẩm, dịch vụ hay hoạt động trải nghiệm, đều góp phần tạo nên một khởi đầu trọn vẹn hơn cho các bạn sinh viên.",
+      "Chúng tôi tin rằng Hội Khai giảng 2026 sẽ mở ra những kết nối tích cực và bền vững giữa Nhà trường, doanh nghiệp và thế hệ trẻ.",
       "Trân trọng kính mời Quý Đơn vị cùng Văn Lang kiến tạo một khởi đầu đáng nhớ cho Tân sinh viên Khóa 32.",
     ],
-    lead: "Hội Khai giảng Trường Đại học Văn Lang 2026 là dấu mốc mở đầu cho hành trình học tập và trưởng thành của hơn 7.000 tân sinh viên Khóa 32, đồng thời là ngày hội kết nối cộng đồng Văn Lang với quy mô dự kiến hơn 10.000 người tham dự.",
+    lead: "Hội Khai giảng Trường Đại học Văn Lang 2026 là dấu mốc chào đón hơn 7.000 Tân sinh viên Khóa 32 chính thức gia nhập cộng đồng Văn Lang, đồng thời là ngày hội kết nối sinh viên, phụ huynh, giảng viên, khách mời và các tổ chức đồng hành.",
     closing: "Trân trọng kính mời Quý Đơn vị cùng Văn Lang kiến tạo một khởi đầu đáng nhớ cho Tân sinh viên Khóa 32.",
     signOff: "TRUNG TÂM HỖ TRỢ SINH VIÊN — TRƯỜNG ĐẠI HỌC VĂN LANG",
   },
@@ -1397,7 +1397,7 @@ export const partnerInvitationContent = {
     {
       number: "03",
       title: "Minh bạch Đo lường",
-      desc: "Cam kết nghiệm thu rõ ràng, cung cấp báo cáo đo lường độc lập (Impact Report) và số liệu xác thực sau sự kiện.",
+      desc: "Ghi nhận quyền lợi rõ ràng, cung cấp báo cáo kết quả thực hiện và số liệu được ghi nhận thực tế sau sự kiện.",
     },
     {
       number: "04",

@@ -29,7 +29,9 @@ export default function PartnerInvitation() {
 
           <p className="ps-letter-greeting">{letter.greeting}</p>
           {letter.paragraphs?.map((para, idx) => (
-            <p key={idx} className="ps-letter-body">{para}</p>
+            <p key={idx} className="ps-letter-body">
+              {idx === letter.paragraphs.length - 1 ? <strong>{para}</strong> : para}
+            </p>
           ))}
 
           <div className="ps-letter-signoff">
@@ -61,4 +63,3 @@ export default function PartnerInvitation() {
     </div>
   );
 }
-

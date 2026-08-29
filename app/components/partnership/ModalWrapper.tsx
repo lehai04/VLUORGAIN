@@ -13,7 +13,7 @@
 
 "use client";
 
-import { useEffect, type ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 import { X } from "lucide-react";
 
 interface ModalWrapperProps {
@@ -35,23 +35,49 @@ export default function ModalWrapper({
   maxWidth = "3xl",
   children,
 }: ModalWrapperProps) {
+  const modalRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+
   // 1. Quản lý sự kiện phím ESC và khóa scroll body
   useEffect(() => {
     if (!isOpen) return;
 
+    const previouslyFocused = document.activeElement as HTMLElement | null;
+
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         onClose();
+        return;
+      }
+
+      if (e.key === "Tab" && modalRef.current) {
+        const focusable = Array.from(
+          modalRef.current.querySelectorAll<HTMLElement>(
+            'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+          )
+        );
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
       }
     };
 
     document.addEventListener("keydown", handleKeyDown);
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    closeButtonRef.current?.focus();
 
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = originalOverflow;
+      previouslyFocused?.focus();
     };
   }, [isOpen, onClose]);
 
@@ -79,11 +105,13 @@ export default function ModalWrapper({
     >
       {/* Khung nội dung trắng bên trong Modal */}
       <div
+        ref={modalRef}
         className={`ps-modal-card ${maxWidthClass}`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Nút đóng tròn góc trên bên phải */}
         <button
+          ref={closeButtonRef}
           type="button"
           className="ps-modal-close"
           onClick={onClose}
@@ -107,4 +135,3 @@ export default function ModalWrapper({
     </div>
   );
 }
-

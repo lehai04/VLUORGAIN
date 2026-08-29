@@ -6,7 +6,7 @@
  * - Trình bày bảng so sánh ngang 15 tiêu chí đầu ra M01 - M15 giữa 5 gói (P1 - P5).
  * - Cột gói P2 được highlight đỏ nhạt tinh tế.
  * - Hỗ trợ thanh cuộn ngang (horizontal scroll) trên Mobile & Tablet.
- * - Click vào bất kỳ dòng nào (hoặc nhấn phím Enter/Space) để mở MatrixRowModal
+ * - Chọn bất kỳ dòng nào (hoặc nhấn phím Enter/Space) để mở MatrixRowModal
  *   hiển thị phương thức triển khai, bằng chứng kiểm đếm và phụ lục hợp đồng.
  * ==============================================================================
  */
@@ -30,7 +30,7 @@ export default function PackageMatrixTable() {
           <span className="ps-sub-eyebrow">PACKAGE MATRIX</span>
           <h3 className="ps-sub-title">So sánh quyền lợi theo gói</h3>
           <p className="ps-sub-desc">
-            Bảng ma trận 15 tiêu chí đối chiếu trực tiếp giữa 5 cấp độ hợp tác. Click vào bất kỳ dòng nào để xem chi tiết cách thực hiện, phụ lục và bằng chứng bàn giao.
+            Bảng ma trận 15 tiêu chí đối chiếu trực tiếp giữa 5 cấp độ hợp tác. Chọn từng nội dung để xem thông tin chi tiết.
           </p>
         </div>
       </div>
@@ -101,7 +101,7 @@ export default function PackageMatrixTable() {
 
       {/* Gợi ý tương tác cho người dùng */}
       <div className="ps-table-footnote">
-        <span>💡 <em>Mẹo:</em> Click vào dòng tiêu chí bất kỳ để xem quy định phụ lục hợp đồng và phương thức bàn giao chi tiết.</span>
+        <span>💡 <em>Mẹo:</em> Chọn từng nội dung để xem thông tin chi tiết.</span>
       </div>
 
       {/* MODAL CHI TIẾT DÒNG MA TRẬN */}
@@ -113,4 +113,3 @@ export default function PackageMatrixTable() {
     </div>
   );
 }
-

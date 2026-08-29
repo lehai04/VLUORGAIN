@@ -24,7 +24,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { ArrowRight, CalendarDays, ChartNoAxesCombined, GraduationCap, Handshake, Star, Users } from "lucide-react";
+import { CalendarDays, ChartNoAxesCombined, GraduationCap, Handshake, Star, Users } from "lucide-react";
 import { SITE_MODE, audiences, communityImages, event, images, journeyItems, stats, timeline } from "../data";
 import PartnershipDesign from "./PartnershipDesign";
 import BrandSpaceSection from "./BrandSpaceSection";
@@ -32,7 +32,6 @@ import PriorityResourceSection from "./PriorityResourceSection";
 import PartnershipSection from "./partnership/PartnershipSection";
 import ContactSection from "./ContactSection";
 import HeroSection from "./HeroSection";
-import RoadTimelineSection from "./RoadTimelineSection";
 
 // Icon cho 6 thẻ thống kê quy mô Section 02
 const statIcons = [Users, GraduationCap, Handshake, Star, CalendarDays, ChartNoAxesCombined];
@@ -58,6 +57,15 @@ export default function Landing() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    if (!light) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setLight(null);
+    };
+    document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, [light]);
+
   return (
     <main>
       {/* Banner chế độ nội bộ */}
@@ -72,10 +80,11 @@ export default function Landing() {
           <div className="storyCopy reveal">
             <span>01 · CÂU CHUYỆN</span>
             <h2>Nơi bạn<br />được nhìn thấy.</h2>
-            <p>Hội Khai giảng là lời chào chính thức dành cho thế hệ K32: nơi mỗi tân sinh viên được chào đón, được kết nối và được khích lệ để bắt đầu một hành trình mang dấu ấn riêng tại Văn Lang.</p>
+            <p>Hội Khai giảng Trường Đại học Văn Lang 2026 là lời chào chính thức dành cho Tân sinh viên Khóa 32 – nơi mỗi bạn được chào đón, kết nối và truyền cảm hứng để tự tin khởi đầu hành trình học tập, trải nghiệm và trưởng thành tại Văn Lang.</p>
+            <p>Với thông điệp “Nơi bạn được nhìn thấy”, chương trình hướng đến việc ghi nhận bản sắc riêng của mỗi sinh viên và cùng các đối tác kiến tạo những trải nghiệm thiết thực, ý nghĩa trong ngày đầu tiên của hành trình đại học.</p>
           </div>
           <div className="storyVisual reveal">
-            <img src={images.story} alt="Không khí Hội Khai giảng tại Trường Đại học Văn Lang" />
+            <img src={images.story} alt="Không khí Hội Khai giảng tại Trường Đại học Văn Lang" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>
@@ -93,7 +102,7 @@ export default function Landing() {
               <h2>Sự kiện trong<br />những con số</h2>
               <b className="scaleSparkle" aria-hidden="true">✦</b>
             </div>
-            <img src="/images/hoi-khai-giang-2025/Lpgo_VLU.png" alt="Văn Lang University" />
+            <img src="/images/hoi-khai-giang-2025/Lpgo_VLU.png" alt="Văn Lang University" loading="lazy" decoding="async" />
           </div>
           <div className="scaleGrid">
             {stats.map((s, i) => {
@@ -135,7 +144,6 @@ export default function Landing() {
                   <h3>{a[0]}</h3>
                   <p>{a[1]}</p>
                 </div>
-                <ArrowRight className="communityArrow" aria-hidden="true" strokeWidth={1.8} />
               </article>
             ))}
           </div>
@@ -150,7 +158,7 @@ export default function Landing() {
           <div className="brandJourneyHeader reveal">
             <span>04 · BRAND JOURNEY</span>
             <i />
-            <h2>Một hành trình.<br />Nhiều điểm chạm.</h2>
+            <h2>Hành trình hiện diện<br />của thương hiệu</h2>
           </div>
           <div className="journeyTrack">
             <div className="journeyLine" aria-hidden="true" />
@@ -201,8 +209,8 @@ export default function Landing() {
             ["Theo booth", "Lượt trải nghiệm"],
             ["Thực tế", "Sản phẩm dùng thử"],
             ["Đối soát", "Hiện kim & hiện vật"],
-            ["100%", "Quyền lợi được nghiệm thu"],
-            ["30–45 ngày", "Báo cáo sau sự kiện"],
+            ["Theo hồ sơ thực tế", "Các quyền lợi đã thống nhất được ghi nhận và nghiệm thu"],
+            ["Theo thỏa thuận", "Báo cáo sau sự kiện"],
           ].map((x) => (
             <article className="reveal" key={x[1]}>
               <b>{x[0]}</b>
@@ -227,8 +235,7 @@ export default function Landing() {
         <p className="legal">Mọi quyền lợi chỉ có hiệu lực sau khi được cấp có thẩm quyền của Nhà trường phê duyệt và thể hiện trong văn bản chính thức.</p>
       </section>
 
-      {/* 12. LỘ TRÌNH TRIỂN KHAI (EVENT ROADMAP TIMELINE) */}
-      <RoadTimelineSection />
+      {/* Timeline ngày cụ thể được ẩn cho đến khi Ban Tổ chức xác nhận lịch mới. */}
 
       {/* 13. THÔNG TIN LIÊN HỆ & BẾ MẠC PROPOSAL (LET'S PARTNER) */}
       <ContactSection />
@@ -245,10 +252,9 @@ export default function Landing() {
       {light && (
         <div className="modal light" onClick={() => setLight(null)} role="dialog" aria-modal="true">
           <img src={light} alt="Ảnh sự kiện Văn Lang phóng lớn" />
-          <button className="close">×</button>
+          <button type="button" className="close" aria-label="Đóng ảnh phóng lớn" onClick={() => setLight(null)}>×</button>
         </div>
       )}
     </main>
   );
 }
-

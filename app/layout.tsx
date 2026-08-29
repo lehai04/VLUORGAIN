@@ -11,8 +11,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.vlu.edu.vn"),
   title: "CONVOCATION DAY 2026 | Hội Khai giảng Trường Đại học Văn Lang",
   description: "CONVOCATION DAY 2026 – Hội Khai giảng Trường Đại học Văn Lang. Nơi bạn được nhìn thấy.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "CONVOCATION DAY 2026 | Hội Khai giảng Trường Đại học Văn Lang",
     description: "Nơi bạn được nhìn thấy",

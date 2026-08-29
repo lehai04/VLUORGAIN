@@ -59,7 +59,7 @@ export default function PriorityCard({ item, index }: PriorityCardProps) {
         </div>
 
         {/* Đoạn văn bản diễn giải quyền lợi/nhu cầu */}
-        <p className="text-[#233052] text-[15px] md:text-[16px] leading-[1.48] mt-1.5 mb-0 font-medium text-justify">
+        <p className="text-[#233052] text-[15px] md:text-[16px] leading-[1.48] mt-1.5 mb-0 font-medium text-left">
           {item.description}
         </p>
       </div>

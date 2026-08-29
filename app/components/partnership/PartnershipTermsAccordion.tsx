@@ -42,10 +42,10 @@ export default function PartnershipTermsAccordion() {
       {/* HEADER PHÂN KHU ĐIỀU KHOẢN & NÚT MỞ/ĐÓNG TẤT CẢ */}
       <div className="ps-sub-header">
         <div>
-          <span className="ps-sub-eyebrow">PARTNERSHIP PRINCIPLES</span>
-          <h3 className="ps-sub-title">Nguyên tắc hợp tác & Pháp chế</h3>
+          <span className="ps-sub-eyebrow">NGUYÊN TẮC HỢP TÁC</span>
+          <h3 className="ps-sub-title">Nguyên tắc hợp tác</h3>
           <p className="ps-sub-desc">
-            15 điều khoản chuẩn mực nhằm bảo đảm tính minh bạch, môi trường giáo dục văn minh và quyền lợi bền vững cho cả hai bên.
+            Các nguyên tắc dưới đây là cơ sở để xây dựng phương án hợp tác. Nội dung áp dụng chính thức sẽ được thể hiện trong thỏa thuận, hợp đồng hoặc văn bản được Nhà trường phê duyệt.
           </p>
         </div>
 
@@ -145,4 +145,3 @@ export default function PartnershipTermsAccordion() {
     </div>
   );
 }
-

@@ -15,8 +15,8 @@ export const SITE_MODE: "internal" | "public" = "internal";
 export const event = {
   heroDate: "26–27.09.2026",
   message: "Nơi bạn được nhìn thấy",
-  sessionOne: "08:00 · 26/09 · Hội trường Trịnh Công Sơn",
-  sessionTwo: "14:00 · 27/09 · Quảng trường Đông Sơn",
+  sessionOne: "Chờ Ban Tổ chức xác nhận",
+  sessionTwo: "Chờ Ban Tổ chức xác nhận",
   email: "t.sv@vlu.edu.vn",
   phone: "0387 803 483",
   website: "www.vlu.edu.vn",
@@ -34,22 +34,22 @@ export const images = {
 
 // 3. SECTION 02: 6 THÔNG SỐ QUY MÔ SỰ KIỆN TRONG NHỮNG CON SỐ
 export const stats = [
-  { label: "Người tham dự", value: "10.000+", note: "Quy mô dự kiến đã được BTC xác nhận" },
-  { label: "Tân sinh viên K32", value: "7.000+", note: "Nhân vật trung tâm của chương trình" },
-  { label: "Khách mời & đối tác", value: "300+", note: "Lãnh đạo, giảng viên, khách mời và đối tác" },
-  { label: "Cụm trải nghiệm", value: "04", note: "CLB · Ẩm thực · Thử thách · Nghệ thuật" },
-  { label: "Ngày hội", value: "02", note: "26–27 tháng 09 năm 2026" },
-  { label: "Mục tiêu huy động", value: "500M+", note: "Tài trợ tiền mặt tối thiểu" },
+  { label: "Người tham dự", value: "10.000+", note: "Quy mô dự kiến trong hai ngày tổ chức" },
+  { label: "Tân sinh viên Khóa 32", value: "7.000+", note: "Nhân vật trung tâm của Hội Khai giảng" },
+  { label: "Khách mời và đại diện đối tác", value: "300+", note: "Lãnh đạo, giảng viên, khách mời, doanh nghiệp và tổ chức đồng hành" },
+  { label: "Cụm hoạt động trải nghiệm", value: "04", note: "Câu lạc bộ · Ẩm thực · Thử thách · Nghệ thuật" },
+  { label: "Ngày tổ chức", value: "02", note: "Ngày 26–27/09/2026" },
+  { label: "Mục tiêu vận động tài trợ", value: "500Tr+", note: "Gồm hiện kim, hiện vật và dịch vụ – chờ Ban Tổ chức xác nhận" },
 ];
 
 // 4. SECTION 03: 6 NHÓM CỘNG ĐỒNG THAM DỰ (AI SẼ CÓ MẶT?)
 export const audiences = [
-  ["Tân sinh viên K32", "Thế hệ mới bắt đầu hành trình học tập và trưởng thành tại Văn Lang."],
-  ["Sinh viên đang học", "Cộng đồng trẻ kết nối, truyền lửa và tạo nên sức sống của ngày hội."],
-  ["Giảng viên & cán bộ", "Đội ngũ đồng hành cùng sinh viên trong hành trình học tập và phát triển."],
-  ["Lãnh đạo Nhà trường", "Đại diện chào đón, định hướng và truyền cảm hứng cho thế hệ mới."],
-  ["Khách mời", "Những cá nhân cùng chia sẻ niềm tin vào giáo dục và giá trị cộng đồng."],
-  ["Doanh nghiệp & đối tác", "Các tổ chức kiến tạo trải nghiệm thiết thực cho sinh viên Văn Lang."],
+  ["Tân sinh viên Khóa 32", "Thế hệ mới chính thức bắt đầu hành trình học tập và trưởng thành tại Văn Lang."],
+  ["Sinh viên Văn Lang", "Cộng đồng trẻ cùng kết nối, truyền cảm hứng và tạo nên sức sống của ngày hội."],
+  ["Giảng viên và cán bộ", "Đội ngũ đồng hành cùng sinh viên trong học tập, trải nghiệm và phát triển."],
+  ["Lãnh đạo Nhà trường", "Đại diện chào đón, định hướng và truyền cảm hứng cho thế hệ sinh viên mới."],
+  ["Khách mời", "Những cá nhân có ảnh hưởng và cùng chia sẻ niềm tin vào giáo dục, thế hệ trẻ và giá trị cộng đồng."],
+  ["Doanh nghiệp và đối tác", "Các tổ chức đồng hành kiến tạo những trải nghiệm thiết thực dành cho sinh viên Văn Lang."],
 ];
 
 // 5. SECTION 03: 6 HÌNH ẢNH THỰC TẾ GẮN VÀO CÁC CARD CỘNG ĐỒNG
@@ -57,7 +57,7 @@ export const communityImages = [
   "/images/hoi-khai-giang-2025/3.1.JPG",
   "/images/hoi-khai-giang-2025/3.2.jpg",
   "/images/hoi-khai-giang-2025/3.3.jpg",
-  "/images/hoi-khai-giang-2025/Bản sao của DK-610.JPG",
+  "/images/hoi-khai-giang-2025/Lanhdao.jpg",
   "/images/hoi-khai-giang-2025/khacmoi.jpg",
   "/images/hoi-khai-giang-2025/hocbong.jpg",
 ];
@@ -107,12 +107,12 @@ export const brandSpaceFeatures = [
 
 // 9. SECTION 04: 6 CHẶNG HÀNH TRÌNH ĐIỂM CHẠM (BRAND JOURNEY)
 export const journeyItems = [
-  { id: "01", title: "Trước sự kiện", subtitle: "Email · Social media", image: "/images/hoi-khai-giang-2025/media.jpg" },
-  { id: "02", title: "Check-in", subtitle: "Check-in · Backdrop", image: "/images/hoi-khai-giang-2025/checkin.jpg" },
-  { id: "03", title: "Khai mạc", subtitle: "LED · Sân khấu", image: "/images/hoi-khai-giang-2025/khaimac.jpg" },
-  { id: "04", title: "Trải nghiệm", subtitle: "Gian hàng · Quà tặng", image: "/images/hoi-khai-giang-2025/khong-gian-cau-lac-bo.webp" },
-  { id: "05", title: "Chia sẻ", subtitle: "Minigame · Livestream", image: "/images/hoi-khai-giang-2025/64.jpg" },
-  { id: "06", title: "Ghi nhớ", subtitle: "Nội dung hậu kỳ · Báo cáo", image: "/images/hoi-khai-giang-2025/Bản sao của VLTV-503.JPG" },
+  { id: "01", title: "Trước sự kiện", subtitle: "Nội dung giới thiệu · Email · Mạng xã hội", image: "/images/hoi-khai-giang-2025/media.jpg" },
+  { id: "02", title: "Đón tiếp", subtitle: "Cổng chào · Check-in · Không gian nhận diện", image: "/images/hoi-khai-giang-2025/checkin.jpg" },
+  { id: "03", title: "Khai mạc", subtitle: "Sân khấu · Màn hình LED · Khu vực khách mời", image: "/images/hoi-khai-giang-2025/khaimac.jpg" },
+  { id: "04", title: "Trải nghiệm", subtitle: "Gian hàng · Hoạt động tương tác · Sản phẩm dùng thử", image: "/images/hoi-khai-giang-2025/khong-gian-cau-lac-bo.webp" },
+  { id: "05", title: "Lan tỏa", subtitle: "Nội dung mạng xã hội · Hình ảnh · Video", image: "/images/hoi-khai-giang-2025/64.jpg" },
+  { id: "06", title: "Sau sự kiện", subtitle: "Nội dung tổng kết · Báo cáo · Hồ sơ nghiệm thu", image: "/images/hoi-khai-giang-2025/Bản sao của VLTV-503.JPG" },
 ];
 
 // 10. DANH SÁCH 6 LỢI ÍCH TỔNG QUAN KHI ĐỒNG HÀNH
@@ -127,10 +127,11 @@ export const benefits = [
 
 // 11. CÁC GÓI TÀI TRỢ TIÊU CHUẨN
 export const packages = [
-  { name: "Kim cương", range: "Từ 300 triệu VNĐ", fit: "Dẫn dắt một trải nghiệm biểu tượng", rights: ["Danh xưng Đối tác chiến lược Convocation Day 2026", "01 flagship activation tại Quảng trường Đông Sơn", "Booth 3 × 6 m tại vị trí ưu tiên", "01 Partner Story và bộ ảnh khu trải nghiệm", "KOL/Talent Văn Lang trải nghiệm theo phương án duyệt", "Độc quyền ngành hàng có điều kiện", "Impact Report riêng sau chương trình"] },
-  { name: "Vàng", range: "200–299 triệu VNĐ", fit: "Sở hữu một điểm chạm theo mục tiêu", rights: ["Danh xưng Nhà tài trợ Vàng", "01 branded experience: Welcome, Recharge hoặc Talent", "Booth 3 × 6 m tại khu vực lưu lượng cao", "01 nội dung thương hiệu và ghi nhận trong recap", "Product trial hoặc challenge có đo lường", "Báo cáo kết quả theo điểm chạm"] },
-  { name: "Bạc", range: "100–199 triệu VNĐ", fit: "Tạo tương tác trực tiếp với K32", rights: ["Danh xưng Nhà tài trợ Bạc", "Booth 3 × 3 m", "01 hoạt động dùng thử, minigame hoặc check-in", "Logo trong hệ thống nhận diện tiêu chuẩn", "Ghi nhận trong nội dung tổng hợp", "Báo cáo lượt tương tác khả dụng"] },
-  { name: "Đồng hành", range: "50–99 triệu VNĐ", fit: "Đồng hành cùng một nhu cầu thiết thực", rights: ["Danh xưng Đơn vị đồng hành", "Gắn thương hiệu với quà tặng hoặc hạng mục phù hợp", "Booth 3 × 3 m hoặc hiện diện tại hạng mục", "Logo trong nhóm đồng hành", "Lời cảm ơn sau chương trình", "Biên bản nghiệm thu hạng mục"] },
+  { name: "P1 · Đối tác Đồng hành Chính", range: "300 triệu đồng", fit: "Đồng hành ở cấp độ cao nhất và hiện diện xuyên suốt hành trình sự kiện.", rights: [] },
+  { name: "P2 · Đối tác Dấu ấn", range: "200 triệu đồng", fit: "Sở hữu một điểm chạm nổi bật, tạo dấu ấn nhận diện rõ nét.", rights: [] },
+  { name: "P3 · Đối tác Tác động", range: "100 triệu đồng", fit: "Cùng Nhà trường tạo ra giá trị thiết thực và câu chuyện tác động dành cho sinh viên.", rights: [] },
+  { name: "P4 · Đối tác Trải nghiệm", range: "50 triệu đồng", fit: "Tương tác trực tiếp với sinh viên thông qua không gian và hoạt động trải nghiệm.", rights: [] },
+  { name: "P5 · Đồng hành Hạng mục", range: "30 triệu đồng", fit: "Đồng hành cùng một nhu cầu hoặc hạng mục cụ thể của chương trình.", rights: [] },
 ];
 
 // 12. BẢNG SO SÁNH MA TRẬN NHANH
@@ -148,10 +149,10 @@ export const compareRows = [
 
 // 13. SECTION 05: ĐỊNH HƯỚNG THEO 4 MỤC TIÊU DOANH NGHIỆP
 export const sponsorGoals = [
-  { id: "awareness", label: "Nhận diện", title: "Xuất hiện ở khoảnh khắc được ghi nhớ", desc: "Tập trung vào hệ thống nhận diện, màn hình, nội dung và một điểm chạm có khả năng tạo hình ảnh mạnh.", recommend: "Kim cương · Vàng", outcomes: ["Flagship visual tại Đông Sơn", "Partner Story trước/sau sự kiện", "Bộ ảnh nhận diện đã nghiệm thu"] },
-  { id: "experience", label: "Trải nghiệm", title: "Để sinh viên thật sự chạm vào thương hiệu", desc: "Biến booth thành một trải nghiệm có chủ đề, có hành động và có chỉ số thay vì chỉ trưng bày.", recommend: "Vàng · Bạc", outcomes: ["Product trial có kiểm đếm", "Brand challenge hoặc photo moment", "Lượt tham gia và phản hồi nhanh"] },
-  { id: "talent", label: "Tuyển dụng", title: "Bắt đầu quan hệ nhân tài từ ngày đầu tiên", desc: "Tạo kết nối tích cực với K32 thông qua career discovery, kỹ năng và cơ hội phát triển; không thu thập dữ liệu sinh viên từ Nhà trường.", recommend: "Kim cương · Vàng", outcomes: ["Talent Discovery Corner", "QR opt-in do doanh nghiệp quản lý", "Nội dung thương hiệu nhà tuyển dụng"] },
-  { id: "impact", label: "Tác động", title: "Gắn thương hiệu với một khởi đầu có ý nghĩa", desc: "Đầu tư vào học bổng, welcome kit hoặc dịch vụ thiết thực và kể câu chuyện tác động một cách có trách nhiệm.", recommend: "Mọi gói · Gói riêng", outcomes: ["Scholarship Impact", "Welcome Kit for K32", "Báo cáo sử dụng nguồn lực"] },
+  { id: "awareness", label: "Nhận diện", title: "Xuất hiện ở khoảnh khắc được ghi nhớ", desc: "Tập trung vào hệ thống nhận diện, màn hình, nội dung và một điểm chạm có khả năng tạo hình ảnh mạnh.", recommend: "P1 · Đối tác Đồng hành Chính · P2 · Đối tác Dấu ấn", outcomes: ["Flagship visual tại Đông Sơn", "Partner Story trước/sau sự kiện", "Bộ ảnh ghi nhận quyền lợi phục vụ nghiệm thu"] },
+  { id: "experience", label: "Trải nghiệm", title: "Để sinh viên thật sự chạm vào thương hiệu", desc: "Biến booth thành một trải nghiệm có chủ đề, có hành động và có chỉ số thay vì chỉ trưng bày.", recommend: "P2 · Đối tác Dấu ấn · P4 · Đối tác Trải nghiệm", outcomes: ["Product trial có kiểm đếm", "Brand challenge hoặc photo moment", "Lượt tham gia và phản hồi nhanh"] },
+  { id: "talent", label: "Tuyển dụng", title: "Bắt đầu quan hệ nhân tài từ ngày đầu tiên", desc: "Tạo kết nối tích cực với K32 thông qua career discovery, kỹ năng và cơ hội phát triển; không thu thập dữ liệu sinh viên từ Nhà trường.", recommend: "P1 · Đối tác Đồng hành Chính · P2 · Đối tác Dấu ấn", outcomes: ["Talent Discovery Corner", "QR opt-in do doanh nghiệp quản lý", "Nội dung thương hiệu nhà tuyển dụng"] },
+  { id: "impact", label: "Tác động", title: "Gắn thương hiệu với một khởi đầu có ý nghĩa", desc: "Đầu tư vào học bổng, welcome kit hoặc dịch vụ thiết thực và kể câu chuyện tác động một cách có trách nhiệm.", recommend: "P3 · Đối tác Tác động · P5 · Đồng hành Hạng mục", outcomes: ["Scholarship Impact", "Welcome Kit for K32", "Báo cáo sử dụng nguồn lực"] },
 ];
 
 // 14. 6 NỀN TẢNG KÍCH HOẠT THƯƠNG HIỆU BIỂU TƯỢNG (SIGNATURE ACTIVATIONS)
@@ -166,14 +167,8 @@ export const signatureActivations = [
 
 // 15. SECTION 12: LỘ TRÌNH TRIỂN KHAI TỪ ĐỀ XUẤT ĐẾN NGÀY HỘI
 export const timeline = [
-  ["25–28/08", "Phê duyệt proposal"],
-  ["28/08–11/09", "Tiếp cận & đàm phán"],
-  ["12/09", "Chốt nhà tài trợ"],
-  ["13–18/09", "Hợp đồng, logo & hiện vật"],
-  ["15/09", "Chốt sơ đồ không gian"],
-  ["19–25/09", "Sản xuất & tổng duyệt"],
-  ["26–27/09", "Hội Khai giảng"],
-  ["30–45 ngày", "Nghiệm thu & báo cáo"],
+  ["Chờ xác nhận", "Lộ trình triển khai mới"],
+  ["Theo thỏa thuận hợp tác", "Nghiệm thu & báo cáo sau sự kiện"],
 ];
 
 // 16. NHU CẦU TIẾP NHẬN NGUỒN LỰC

@@ -1,19 +1,13 @@
 /**
  * ==============================================================================
- * COMPONENT: HERO SECTION (CINEMATIC EVENT LANDING HERO)
+ * COMPONENT: HERO SECTION (EDITORIAL CAMPAIGN EVENT HERO)
  * ------------------------------------------------------------------------------
- * Tái tạo 95% visual reference chuẩn điện ảnh:
- * - Nền: Drone view toàn cảnh đêm Hội Khai giảng Văn Lang 2025 với hàng nghìn sinh viên & sân khấu.
- * - Top Navigation: Logo trắng VLU + Menu tối giản + Nút CTA viên thuốc đỏ có mũi tên tròn trắng.
- * - Cột trái Typography:
- *   + Eyebrow: Vạch đỏ + HỘI KHAI GIẢNG 2026
- *   + Tiêu đề 3 tầng: "MỞ RA" (trắng lớn) + "HÀNH TRÌNH MỚI" (đỏ cọ nghệ thuật) + "CÙNG VĂN LANG" (trắng lớn)
- *   + Vệt sáng neon đỏ (Red Light Trail) uốn quanh tiêu đề.
- *   + Thông điệp: "Nơi bạn được nhìn thấy" ✦
- *   + Nút CTA duy nhất: "KHÁM PHÁ CƠ HỘI ĐỒNG HÀNH →" (viền đỏ phát sáng, nền tối trong suốt).
- * - Information Glass Panel (đáy trái & giữa):
- *   + 4 cột thông tin: Ngày giờ (26-27.09.2026), Địa điểm (Trịnh Công Sơn & Đông Sơn), Quy mô (Hàng nghìn sinh viên), Hoạt động.
- * - Đáy phải: Quầng sáng đỏ + Biểu tượng VLU phát sáng + Vệt sáng chéo + Nút "CUỘN ĐỂ KHÁM PHÁ".
+ * Redesign theo phong cách Editorial Typography cao cấp:
+ * - Hierarchy rõ nét: "HÀNH TRÌNH MỚI" (Visual focus đỏ Van Lang) > "KHỞI ĐẦU" > "CÙNG VĂN LANG" (lệch nhịp)
+ * - Giữ trọn vẹn Left Safe Area (chiếm 40-48% chiều rộng), không che background sân khấu & crowd
+ * - Gradient overlay chuyển mượt từ tối sang trong suốt (Fade 90deg sang phải)
+ * - Điểm nhấn tinh tế: Eyebrow badge phát quang nhẹ, watermark 2026 siêu mờ, secondary text-link CTA
+ * - Animation load mượt mà (fade up & reveal), không giật lag hay loop gây rối mắt
  * ==============================================================================
  */
 
@@ -29,7 +23,6 @@ import {
   ChevronRight,
   ArrowRight,
   Mouse,
-  Sparkles,
 } from "lucide-react";
 import { images } from "../data";
 
@@ -37,9 +30,12 @@ export default function HeroSection() {
   const [menu, setMenu] = useState(false);
 
   return (
-    <section id="top" className="relative w-full min-h-screen min-h-[920px] bg-[#070913] text-white overflow-hidden flex flex-col justify-between">
+    <section
+      id="top"
+      className="relative w-full min-h-screen min-h-[920px] bg-[#060813] text-white overflow-hidden flex flex-col justify-between"
+    >
       {/* 1. BACKGROUND MEDIA (VIDEO / FALLBACK IMAGE) */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <video
           className="w-full h-full object-cover object-center scale-[1.02]"
           autoPlay
@@ -53,42 +49,44 @@ export default function HeroSection() {
           <source src={images.heroVideo} type="video/webm" />
         </video>
 
-        {/* Cinematic Vignette & Gradients */}
-        {/* Left deep shadow for typography contrast */}
+        {/* Cinematic Vignette & Gradients - LEFT SAFE AREA PRESERVATION */}
+        {/* Left deep shadow for typography contrast, smoothly fading to reveal the center/right stage */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "linear-gradient(90deg, rgba(5,7,18,0.95) 0%, rgba(5,7,18,0.85) 34%, rgba(5,7,18,0.4) 62%, rgba(5,7,18,0.15) 100%)",
+              "linear-gradient(90deg, rgba(4,8,25,0.94) 0%, rgba(4,8,25,0.80) 30%, rgba(4,8,25,0.35) 55%, rgba(4,8,25,0.05) 75%, transparent 100%)",
           }}
           aria-hidden="true"
         />
 
         {/* Top shadow for navigation */}
         <div
-          className="absolute top-0 left-0 right-0 h-40 pointer-events-none"
+          className="absolute top-0 left-0 right-0 h-36 pointer-events-none"
           style={{
-            background: "linear-gradient(180deg, rgba(4,6,15,0.9) 0%, rgba(4,6,15,0.4) 60%, transparent 100%)",
+            background:
+              "linear-gradient(180deg, rgba(4,6,15,0.85) 0%, rgba(4,6,15,0.2) 65%, transparent 100%)",
           }}
           aria-hidden="true"
         />
 
-        {/* Bottom vignette */}
+        {/* Bottom vignette for information panel */}
         <div
           className="absolute bottom-0 left-0 right-0 h-72 pointer-events-none"
           style={{
-            background: "linear-gradient(0deg, rgba(4,6,15,0.95) 0%, rgba(4,6,15,0.5) 50%, transparent 100%)",
+            background:
+              "linear-gradient(0deg, rgba(4,6,15,0.92) 0%, rgba(4,6,15,0.4) 50%, transparent 100%)",
           }}
           aria-hidden="true"
         />
 
-        {/* Dramatic Bottom-Right Red-Orange Glow */}
+        {/* Subtle warm ambient accent behind the red focus title */}
         <div
-          className="absolute -bottom-10 -right-10 w-[600px] sm:w-[750px] h-[600px] sm:h-[750px] rounded-full pointer-events-none"
+          className="absolute top-1/3 -left-20 w-[520px] h-[520px] rounded-full pointer-events-none"
           style={{
             background:
-              "radial-gradient(circle at 75% 75%, rgba(229,44,71,0.48) 0%, rgba(234,66,88,0.24) 35%, rgba(215,33,52,0.06) 65%, transparent 75%)",
-            filter: "blur(32px)",
+              "radial-gradient(circle, rgba(229,44,71,0.16) 0%, rgba(229,44,71,0.04) 45%, transparent 70%)",
+            filter: "blur(60px)",
           }}
           aria-hidden="true"
         />
@@ -96,7 +94,7 @@ export default function HeroSection() {
 
       {/* 2. TOP NAVIGATION (TRANSPARENT MINIMALIST OVERLAY) */}
       <header className="relative z-30 w-full max-w-[1780px] mx-auto px-6 sm:px-10 lg:px-16 pt-8 pb-4 flex items-center justify-between">
-        {/* Top-Left Brand Logo (Lpgo_VLU.png) */}
+        {/* Top-Left Brand Logo */}
         <a href="#top" className="flex items-center gap-3.5 group">
           <Image
             src="/images/hoi-khai-giang-2025/Lpgo_VLU.png"
@@ -109,14 +107,14 @@ export default function HeroSection() {
         </a>
 
         {/* Right Navigation & CTA Group */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden xl:flex items-center gap-8">
           {/* Top-Right Navigation Menu */}
           <nav className="flex items-center gap-8 text-[15px] font-medium text-white/90">
             {[
               ["Câu chuyện", "#story"],
-              ["Điểm chạm", "#journey"],
-              ["Quyền lợi", "#benefits"],
-              ["Gói tài trợ", "#packages"],
+              ["Hành trình thương hiệu", "#journey"],
+              ["Cơ hội đồng hành", "#benefits"],
+              ["Gói đồng hành", "#packages"],
               ["Liên hệ", "#contact"],
             ].map(([label, href]) => (
               <a
@@ -129,12 +127,12 @@ export default function HeroSection() {
             ))}
           </nav>
 
-          {/* Far-Right CTA Pill Button with Circular White Arrow (Consistent 15px font & refined size) */}
+          {/* Far-Right CTA Pill Button with Circular White Arrow */}
           <a
             href="#contact"
             className="group flex items-center gap-2.5 bg-[#E52C47] hover:bg-[#D71920] text-white pl-5 pr-1.5 py-1.5 rounded-full font-semibold text-[15px] shadow-[0_4px_20px_rgba(229,44,71,0.4)] hover:shadow-[0_6px_28px_rgba(229,44,71,0.6)] transition-all duration-300 ml-4 flex-shrink-0"
           >
-            <span>Đăng ký đồng hành</span>
+            <span>Trao đổi phương án đồng hành</span>
             <span className="w-7 h-7 rounded-full bg-white text-[#E52C47] flex items-center justify-center flex-shrink-0 group-hover:translate-x-0.5 transition-transform shadow-sm">
               <ArrowRight size={14} strokeWidth={2.5} />
             </span>
@@ -145,7 +143,7 @@ export default function HeroSection() {
         <button
           type="button"
           onClick={() => setMenu(!menu)}
-          className="lg:hidden p-2 rounded-lg bg-white/10 text-white"
+          className="xl:hidden p-2 rounded-lg bg-white/10 text-white"
           aria-label="Mở menu"
         >
           ☰
@@ -154,19 +152,20 @@ export default function HeroSection() {
 
       {/* Mobile Drawer Menu */}
       {menu && (
-        <div className="lg:hidden fixed inset-0 z-40 bg-[#070913]/95 backdrop-blur-xl flex flex-col p-8 pt-24 gap-6 text-xl font-bold">
-          <button
-            type="button"
+        <div className="xl:hidden fixed inset-0 z-40 bg-[#070913]/95 backdrop-blur-xl flex flex-col p-8 pt-36 gap-6 text-xl font-bold">
+          <a
+            href="#top"
             onClick={() => setMenu(false)}
-            className="absolute top-6 right-6 text-2xl text-white/80"
+            className="absolute top-24 right-8 z-50 flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 text-2xl text-white/80"
+            aria-label="Đóng menu"
           >
             ✕
-          </button>
+          </a>
           {[
             ["Câu chuyện", "#story"],
-            ["Điểm chạm", "#journey"],
-            ["Quyền lợi", "#benefits"],
-            ["Gói tài trợ", "#packages"],
+            ["Hành trình thương hiệu", "#journey"],
+            ["Cơ hội đồng hành", "#benefits"],
+            ["Gói đồng hành", "#packages"],
             ["Liên hệ", "#contact"],
           ].map(([label, href]) => (
             <a
@@ -181,102 +180,59 @@ export default function HeroSection() {
         </div>
       )}
 
-      {/* 3. MAIN HERO CONTENT AREA (LEFT-ALIGNED) - SHIFTED DOWN FOR OPTIMAL SPACING */}
-      <div className="relative z-20 w-full max-w-[1780px] mx-auto px-6 sm:px-10 lg:px-16 pt-12 sm:pt-20 md:pt-28 pb-8 sm:pb-12 my-auto">
-        <div className="max-w-3xl">
-          {/* Eyebrow with Red Vertical Bar */}
-          <div className="flex items-center gap-2.5 mb-4 sm:mb-6">
-            <span className="w-[3.5px] h-4 bg-[#E52C47] rounded-full shadow-[0_0_8px_#E52C47]" />
-            <span className="text-[#E52C47] font-bold text-[13px] sm:text-[14px] tracking-[0.24em] uppercase">
+      {/* 3. MAIN HERO CONTENT AREA (LEFT-ALIGNED EDITORIAL COMPOSITION) */}
+      <div className="relative z-20 w-full max-w-[1780px] mx-auto px-6 sm:px-10 lg:px-16 pt-8 sm:pt-14 md:pt-18 pb-6 my-auto">
+        <div className="w-full max-w-3xl">
+          {/* Eyebrow with Red Pill Badge */}
+          <div className="anim-eyebrow flex items-center gap-3 mb-5 sm:mb-6">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E52C47]/10 border border-[#E52C47]/25 text-[#E52C47] text-[12px] sm:text-[13px] font-bold tracking-[0.22em] uppercase backdrop-blur-md shadow-[0_0_16px_rgba(229,44,71,0.2)]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E52C47] animate-pulse" />
               HỘI KHAI GIẢNG 2026
             </span>
           </div>
 
-          {/* MAIN HEADLINE WITH DYNAMIC RED NEON TRAIL */}
-          <div className="relative mb-6 select-none">
-            {/* Red Neon Light Trail SVG wrapping around headline */}
-            <svg
-              className="absolute -top-10 -left-12 w-[120%] sm:w-[130%] h-[130%] pointer-events-none z-0 opacity-90"
-              viewBox="0 0 600 240"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+          {/* EDITORIAL HEADLINE CLUSTER */}
+          <div className="relative mb-6 sm:mb-8 select-none">
+            {/* Subtle background year watermark - ultra faint, artistic */}
+            <div
+              className="absolute -left-4 -top-8 text-[140px] sm:text-[200px] md:text-[240px] font-black text-white/[0.03] select-none pointer-events-none tracking-tighter leading-none z-0"
               aria-hidden="true"
             >
-              <defs>
-                <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
-                  <feGaussianBlur stdDeviation="6" result="blur1" />
-                  <feGaussianBlur stdDeviation="14" result="blur2" />
-                  <feMerge>
-                    <feMergeNode in="blur2" />
-                    <feMergeNode in="blur1" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
-                </filter>
-              </defs>
-              {/* Outer soft glow loop */}
-              <path
-                d="M 20 120 C 60 20, 240 10, 380 70 C 500 120, 480 200, 320 210 C 160 220, 60 170, 100 100 C 140 30, 360 20, 520 80"
-                stroke="#E52C47"
-                strokeWidth="7"
-                strokeLinecap="round"
-                opacity="0.6"
-                filter="url(#neon-glow)"
-              />
-              {/* Inner intense white-red core line */}
-              <path
-                d="M 20 120 C 60 20, 240 10, 380 70 C 500 120, 480 200, 320 210 C 160 220, 60 170, 100 100 C 140 30, 360 20, 520 80"
-                stroke="#FFFFFF"
-                strokeWidth="2"
-                strokeLinecap="round"
-                opacity="0.9"
-              />
-            </svg>
-
-            {/* Headline Tier 1: "MỞ RA" */}
-            <div className="relative z-10 text-white font-black text-[44px] sm:text-[76px] md:text-[96px] lg:text-[116px] leading-[0.88] tracking-[-0.04em] uppercase">
-              MỞ RA
+              2026
             </div>
 
-            {/* Headline Tier 2: "HÀNH TRÌNH MỚI" (Expressive Red Brush Script) */}
-            <div
-              className="relative z-20 text-[#E52C47] italic font-black text-[30px] sm:text-[50px] md:text-[68px] lg:text-[80px] leading-[0.9] tracking-[-0.03em] -mt-1 sm:-mt-3 ml-2 sm:ml-6 transform -rotate-[2.5deg] drop-shadow-[0_4px_24px_rgba(229,44,71,0.6)]"
-              style={{
-                textShadow: "0 0 35px rgba(229,44,71,0.7), 0 0 10px rgba(255,255,255,0.4)",
-              }}
-            >
+            {/* Headline Tier 1 */}
+            <div className="anim-title-1 relative z-10 text-white font-extrabold text-[28px] min-[360px]:text-[32px] sm:text-[48px] md:text-[60px] lg:text-[70px] xl:text-[78px] leading-[0.98] tracking-[-0.035em] uppercase pt-1 sm:whitespace-nowrap">
+              KHỞI ĐẦU
+            </div>
+
+            {/* Headline Tier 2: "HÀNH TRÌNH MỚI" (Primary Visual Focus in 1 Single Line) */}
+            <div className="anim-title-2 relative z-10 text-[#E52C47] italic font-black text-[28px] min-[360px]:text-[32px] min-[390px]:text-[36px] sm:text-[56px] md:text-[72px] lg:text-[84px] xl:text-[96px] leading-[0.98] tracking-[-0.03em] mt-2 sm:mt-3.5 sm:whitespace-nowrap drop-shadow-[0_2px_20px_rgba(229,44,71,0.35)] py-1">
               HÀNH TRÌNH MỚI
             </div>
 
-            {/* Headline Tier 3: "CÙNG VĂN LANG" */}
-            <div className="relative z-10 text-white font-black text-[34px] sm:text-[60px] md:text-[78px] lg:text-[94px] leading-[0.92] tracking-[-0.04em] uppercase mt-1 sm:mt-2">
+            {/* Headline Tier 3: "CÙNG VĂN LANG" (Smaller, Rhythmic Offset) */}
+            <div className="anim-title-3 relative z-10 text-white font-extrabold text-[22px] min-[360px]:text-[26px] min-[390px]:text-[28px] sm:text-[42px] md:text-[52px] lg:text-[60px] xl:text-[68px] leading-[0.98] tracking-[-0.03em] uppercase mt-2.5 sm:mt-4 ml-1.5 sm:ml-4 pb-1 sm:whitespace-nowrap">
               CÙNG VĂN LANG
             </div>
           </div>
 
-          {/* Supporting Slogan: "Nơi bạn được nhìn thấy" ✦ */}
-          <div className="flex items-center gap-2 mb-2 sm:mb-3">
-            <h3 className="text-white text-[18px] sm:text-[22px] md:text-[25px] font-bold tracking-tight m-0">
-              Nơi bạn được nhìn thấy
-            </h3>
-            <span className="text-[#E52C47] text-lg sm:text-xl drop-shadow-[0_0_8px_#E52C47]">
-              ✦
-            </span>
-          </div>
-
           {/* Descriptive Copy */}
-          <p className="text-[#C5C9D6] text-[14px] sm:text-[16px] leading-relaxed max-w-xl mb-6 sm:mb-8">
-            Đồng hành tài trợ cùng VLU, kết nối thương hiệu với hàng nghìn sinh viên và cộng đồng trẻ năng động.
+          <p className="anim-desc text-white/80 text-[15px] sm:text-[16.5px] leading-[1.65] max-w-[580px] mb-6 sm:mb-8 font-normal italic">
+            Đồng hành cùng Văn Lang kiến tạo một khởi đầu đáng nhớ, kết nối thương hiệu với hơn 10.000 người tham dự và cộng đồng sinh viên trẻ, năng động.
           </p>
 
-          {/* PRIMARY CTA (ONLY ONE BUTTON - FULL WIDTH ON MOBILE) */}
-          <div className="flex items-center gap-4">
+          {/* SECONDARY CTA (Sleek Editorial Text Link with Interactive Arrow) */}
+          <div className="anim-cta flex items-center">
             <a
-              href="#journey"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4 bg-[#10132B]/80 hover:bg-[#E52C47] border-[1.5px] border-[#E52C47] text-white font-bold text-[13.5px] sm:text-[15px] uppercase tracking-wider rounded-xl shadow-[0_0_24px_rgba(229,44,71,0.35)] hover:shadow-[0_0_36px_rgba(229,44,71,0.7)] transition-all duration-300 min-h-[48px]"
+              href="#packages"
+              className="group inline-flex items-center gap-3 text-white font-semibold text-[14.5px] sm:text-[15.5px] tracking-wide transition-all duration-300"
             >
-              <span>Khám phá cơ hội đồng hành</span>
-              <span className="text-[#E52C47] group-hover:text-white transition-colors">
-                →
+              <span className="relative pb-0.5 border-b border-[#E52C47]/50 group-hover:border-[#E52C47] text-white/90 group-hover:text-white transition-colors">
+                Khám phá cơ hội đồng hành
+              </span>
+              <span className="w-8 h-8 rounded-full bg-white/10 border border-white/15 flex items-center justify-center text-[#E52C47] group-hover:bg-[#E52C47] group-hover:text-white group-hover:border-[#E52C47] group-hover:translate-x-1.5 transition-all duration-300 shadow-sm">
+                <ArrowRight size={14} strokeWidth={2.5} />
               </span>
             </a>
           </div>
@@ -284,77 +240,86 @@ export default function HeroSection() {
       </div>
 
       {/* 4. BOTTOM INFORMATION PANEL & BRAND MARK */}
-      <div className="relative z-20 w-full max-w-[1780px] mx-auto px-5 sm:px-8 lg:px-16 pb-8 sm:pb-10 flex flex-col lg:flex-row lg:items-end justify-between gap-6 sm:gap-8">
-        
-        {/* Left Information Glass Panel (~64% Width) */}
-        <div className="w-full lg:w-[68%] xl:w-[65%] bg-[#0B0E23]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-4 sm:p-6 shadow-[0_16px_40px_rgba(0,0,0,0.6)]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 items-center">
-            
+      <div className="anim-info-panel relative z-20 w-full max-w-[1780px] mx-auto px-5 sm:px-8 lg:px-16 pb-8 sm:pb-10 flex flex-col lg:flex-row lg:items-end justify-between gap-6 sm:gap-8">
+        {/* Thanh thông tin tận dụng toàn bộ chiều rộng còn lại; cột lịch/địa điểm rộng hơn để không cắt chữ. */}
+        <div className="w-full lg:flex-1 lg:min-w-0 xl:max-w-[1380px] bg-[#080B1E]/75 backdrop-blur-xl border border-white/10 rounded-2xl p-4 sm:p-5 shadow-[0_16px_40px_rgba(0,0,0,0.5)]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1fr_1.35fr_1fr_1fr] gap-4 sm:gap-4 items-center">
             {/* Column 01: Date & Time */}
             <div className="flex items-start gap-3.5 border-b sm:border-b-0 sm:border-r border-white/10 pb-3 sm:pb-0 pr-0 sm:pr-2 relative">
               <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#E52C47]/10 text-[#E52C47] flex items-center justify-center flex-shrink-0 mt-0.5">
-                <CalendarDays size={19} strokeWidth={2.2} />
+                <CalendarDays size={18} strokeWidth={2.2} />
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-white font-extrabold text-[16px] sm:text-[18px] tracking-tight leading-tight">
-                  26–27.09.2026
+                <div className="text-white font-extrabold text-[15px] sm:text-[17px] tracking-tight leading-tight">
+                  Dự kiến 26–27.09.2026
                 </div>
-                <div className="text-[#98A2B3] text-[12px] sm:text-[12.5px] mt-0.5 sm:mt-1 font-medium">
-                  08:00 - 21:00
+                <div className="text-[#98A2B3] text-[12px] mt-0.5 sm:mt-1 font-medium">
+                  Ngày tổ chức
                 </div>
               </div>
-              <ChevronRight size={14} className="hidden lg:block text-white/30 absolute right-1.5 top-1/2 -translate-y-1/2" />
+              <ChevronRight
+                size={14}
+                className="hidden lg:block text-white/30 absolute right-1.5 top-1/2 -translate-y-1/2"
+              />
             </div>
 
             {/* Column 02: Venue Sessions */}
             <div className="flex items-start gap-3.5 border-b sm:border-b-0 sm:border-r border-white/10 pb-3 sm:pb-0 pr-0 sm:pr-2 relative">
               <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#E52C47]/10 text-[#E52C47] flex items-center justify-center flex-shrink-0 mt-0.5">
-                <MapPin size={19} strokeWidth={2.2} />
+                <MapPin size={18} strokeWidth={2.2} />
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-white font-bold text-[13px] sm:text-[13.5px] leading-tight truncate">
-                  Hội trường Trịnh Công Sơn
+                <div className="text-white font-bold text-[13px] leading-tight">
+                  Chờ Ban Tổ chức xác nhận
                 </div>
-                <div className="text-[#98A2B3] text-[11px] sm:text-[11.5px] mb-1">
-                  14:00 - 26/09
+                <div className="text-[#98A2B3] text-[11px] mb-1">
+                  Thời gian từng ngày
                 </div>
-                <div className="text-white font-bold text-[13px] sm:text-[13.5px] leading-tight truncate">
-                  Quảng trường Đông Sơn
+                <div className="text-white font-bold text-[13px] leading-tight">
+                  Chờ Ban Tổ chức xác nhận
                 </div>
-                <div className="text-[#98A2B3] text-[11px] sm:text-[11.5px]">
-                  14:00 - 27/09
+                <div className="text-[#98A2B3] text-[11px]">
+                  Địa điểm từng ngày
                 </div>
               </div>
-              <ChevronRight size={14} className="hidden lg:block text-white/30 absolute right-1.5 top-1/2 -translate-y-1/2" />
+              <ChevronRight
+                size={14}
+                className="hidden lg:block text-white/30 absolute right-1.5 top-1/2 -translate-y-1/2"
+              />
             </div>
 
             {/* Column 03: Audience Scale */}
             <div className="flex items-start gap-3.5 border-b sm:border-b-0 sm:border-r border-white/10 pb-3 sm:pb-0 pr-0 sm:pr-2 relative">
               <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#E52C47]/10 text-[#E52C47] flex items-center justify-center flex-shrink-0 mt-0.5">
-                <Users size={19} strokeWidth={2.2} />
+                <Users size={18} strokeWidth={2.2} />
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-white font-extrabold text-[15px] sm:text-[17px] tracking-tight leading-tight">
+                <div className="text-white font-extrabold text-[15px] sm:text-[16.5px] tracking-tight leading-tight">
                   Hàng nghìn
                 </div>
                 <div className="text-[#98A2B3] text-[11.5px] sm:text-[12px] mt-0.5 sm:mt-1 font-medium leading-snug">
-                  Sinh viên tham dự<br />& cộng đồng trẻ
+                  Sinh viên tham dự
+                  <br />& cộng đồng trẻ
                 </div>
               </div>
-              <ChevronRight size={14} className="hidden lg:block text-white/30 absolute right-1.5 top-1/2 -translate-y-1/2" />
+              <ChevronRight
+                size={14}
+                className="hidden lg:block text-white/30 absolute right-1.5 top-1/2 -translate-y-1/2"
+              />
             </div>
 
             {/* Column 04: Activities & Experiences */}
             <div className="flex items-start gap-3.5 pt-1 sm:pt-0">
               <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#E52C47]/10 text-[#E52C47] flex items-center justify-center flex-shrink-0 mt-0.5">
-                <Megaphone size={19} strokeWidth={2.2} />
+                <Megaphone size={18} strokeWidth={2.2} />
               </div>
               <div className="flex-1 min-w-0">
                 <div className="text-white font-extrabold text-[14.5px] sm:text-[16px] tracking-tight leading-tight">
                   Nhiều hoạt động
                 </div>
                 <div className="text-[#98A2B3] text-[11.5px] sm:text-[12px] mt-0.5 sm:mt-1 font-medium leading-snug">
-                  Bùng nổ trải nghiệm<br />& kết nối thương hiệu
+                  Bùng nổ trải nghiệm
+                  <br />& kết nối thương hiệu
                 </div>
               </div>
             </div>
@@ -366,7 +331,7 @@ export default function HeroSection() {
           {/* Scroll Hint */}
           <a
             href="#story"
-            className="flex items-center gap-2 text-white/80 hover:text-white text-[11.5px] font-bold tracking-[0.2em] uppercase transition-colors drop-shadow-md"
+            className="flex items-center gap-2 text-white/70 hover:text-white text-[11.5px] font-bold tracking-[0.2em] uppercase transition-colors drop-shadow-md"
           >
             <span>CUỘN ĐỂ KHÁM PHÁ</span>
             <Mouse size={15} className="animate-bounce text-[#E52C47]" />
