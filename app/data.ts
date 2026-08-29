@@ -15,8 +15,9 @@ export const SITE_MODE: "internal" | "public" = "internal";
 export const event = {
   heroDate: "26–27.09.2026",
   message: "Nơi bạn được nhìn thấy",
-  sessionOne: "Chờ Ban Tổ chức xác nhận",
-  sessionTwo: "Chờ Ban Tổ chức xác nhận",
+  sessionOne: "8h00 – 11h30 sáng 26/09/2026 · Hội trường Trịnh Công Sơn",
+  sessionTwo: "14h00 – 20h00 chiều 27/09/2026 · Quảng trường Đông Sơn",
+  location: "Cơ sở chính Trường Đại học Văn Lang, 69/68 Đặng Thuỳ Trâm, Phường Bình Lợi Trung",
   email: "hien.nguyen@vlu.edu.vn",
   phone: "0387 803 483",
   website: "www.vlu.edu.vn",

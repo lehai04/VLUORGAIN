@@ -242,8 +242,8 @@ export default function HeroSection() {
       {/* 4. BOTTOM INFORMATION PANEL & BRAND MARK */}
       <div className="anim-info-panel relative z-20 w-full max-w-[1780px] mx-auto px-5 sm:px-8 lg:px-16 pb-8 sm:pb-10 flex flex-col lg:flex-row lg:items-end justify-between gap-6 sm:gap-8">
         {/* Thanh thông tin tận dụng toàn bộ chiều rộng còn lại; cột lịch/địa điểm rộng hơn để không cắt chữ. */}
-        <div className="w-full lg:flex-1 lg:min-w-0 xl:max-w-[1380px] bg-[#080B1E]/75 backdrop-blur-xl border border-white/10 rounded-2xl p-4 sm:p-5 shadow-[0_16px_40px_rgba(0,0,0,0.5)]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1fr_1.35fr_1fr_1fr] gap-4 sm:gap-4 items-center">
+        <div className="w-full lg:flex-1 lg:min-w-0 xl:max-w-[1460px] bg-[#080B1E]/80 backdrop-blur-xl border border-white/10 rounded-2xl p-4 sm:p-5 shadow-[0_16px_40px_rgba(0,0,0,0.5)]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[0.85fr_1.85fr_0.85fr_0.85fr] gap-4 sm:gap-4 items-center">
             {/* Column 01: Date & Time */}
             <div className="flex items-start gap-3.5 border-b sm:border-b-0 sm:border-r border-white/10 pb-3 sm:pb-0 pr-0 sm:pr-2 relative">
               <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#E52C47]/10 text-[#E52C47] flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -251,10 +251,10 @@ export default function HeroSection() {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="text-white font-extrabold text-[15px] sm:text-[17px] tracking-tight leading-tight">
-                  Dự kiến 26–27.09.2026
+                  26–27.09.2026
                 </div>
                 <div className="text-[#98A2B3] text-[12px] mt-0.5 sm:mt-1 font-medium">
-                  Ngày tổ chức
+                  Thời gian tổ chức
                 </div>
               </div>
               <ChevronRight
@@ -263,23 +263,24 @@ export default function HeroSection() {
               />
             </div>
 
-            {/* Column 02: Venue Sessions */}
-            <div className="flex items-start gap-3.5 border-b sm:border-b-0 sm:border-r border-white/10 pb-3 sm:pb-0 pr-0 sm:pr-2 relative">
+            {/* Column 02: Venue Sessions & Campus Address */}
+            <div className="flex items-start gap-3.5 border-b sm:border-b-0 sm:border-r border-white/10 pb-3 sm:pb-0 pr-0 sm:pr-3 relative">
               <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#E52C47]/10 text-[#E52C47] flex items-center justify-center flex-shrink-0 mt-0.5">
                 <MapPin size={18} strokeWidth={2.2} />
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-white font-bold text-[13px] leading-tight">
-                  Chờ Ban Tổ chức xác nhận
+                <div className="space-y-1">
+                  <div className="text-white text-[12.5px] sm:text-[13px] leading-snug">
+                    <span className="text-[#FF7A8A] font-bold">26/09 (8h00 – 11h30):</span>{" "}
+                    <span className="font-semibold text-white/95">Hội trường Trịnh Công Sơn</span>
+                  </div>
+                  <div className="text-white text-[12.5px] sm:text-[13px] leading-snug">
+                    <span className="text-[#FF7A8A] font-bold">27/09 (14h00 – 20h00):</span>{" "}
+                    <span className="font-semibold text-white/95">Quảng trường Đông Sơn</span>
+                  </div>
                 </div>
-                <div className="text-[#98A2B3] text-[11px] mb-1">
-                  Thời gian từng ngày
-                </div>
-                <div className="text-white font-bold text-[13px] leading-tight">
-                  Chờ Ban Tổ chức xác nhận
-                </div>
-                <div className="text-[#98A2B3] text-[11px]">
-                  Địa điểm từng ngày
+                <div className="text-[#98A2B3] text-[11px] sm:text-[11.5px] font-medium leading-tight mt-1.5 pt-1 border-t border-white/10">
+                  📍 Cơ sở chính: 69/68 Đặng Thuỳ Trâm, P. Bình Lợi Trung
                 </div>
               </div>
               <ChevronRight
@@ -295,11 +296,11 @@ export default function HeroSection() {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="text-white font-extrabold text-[15px] sm:text-[16.5px] tracking-tight leading-tight">
-                  Hàng nghìn
+                  10.000+
                 </div>
                 <div className="text-[#98A2B3] text-[11.5px] sm:text-[12px] mt-0.5 sm:mt-1 font-medium leading-snug">
-                  Sinh viên tham dự
-                  <br />& cộng đồng trẻ
+                  Người tham dự
+                  <br />(7.000+ Tân sinh viên K32)
                 </div>
               </div>
               <ChevronRight
@@ -315,10 +316,10 @@ export default function HeroSection() {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="text-white font-extrabold text-[14.5px] sm:text-[16px] tracking-tight leading-tight">
-                  Nhiều hoạt động
+                  04 Cụm trải nghiệm
                 </div>
                 <div className="text-[#98A2B3] text-[11.5px] sm:text-[12px] mt-0.5 sm:mt-1 font-medium leading-snug">
-                  Bùng nổ trải nghiệm
+                  Bùng nổ hoạt động
                   <br />& kết nối thương hiệu
                 </div>
               </div>
