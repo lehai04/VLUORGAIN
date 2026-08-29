@@ -39,7 +39,7 @@ export const stats = [
   { label: "Khách mời và đại diện đối tác", value: "300+", note: "Lãnh đạo, giảng viên, khách mời, doanh nghiệp và tổ chức đồng hành" },
   { label: "Cụm hoạt động trải nghiệm", value: "04", note: "Câu lạc bộ · Ẩm thực · Thử thách · Nghệ thuật" },
   { label: "Ngày tổ chức", value: "02", note: "Ngày 26–27/09/2026" },
-  { label: "Mục tiêu vận động tài trợ", value: "500Tr+", note: "Gồm hiện kim, hiện vật và dịch vụ – chờ Ban Tổ chức xác nhận" },
+  { label: "Mục tiêu vận động tài trợ", value: "500 Triệu +", note: "Gồm hiện kim, hiện vật và dịch vụ – chờ Ban Tổ chức xác nhận" },
 ];
 
 // 4. SECTION 03: 6 NHÓM CỘNG ĐỒNG THAM DỰ (AI SẼ CÓ MẶT?)
