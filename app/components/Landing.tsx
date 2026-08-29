@@ -111,7 +111,7 @@ export default function Landing() {
                 <article className="scaleCard reveal" style={{ transitionDelay: `${i * 80}ms` }} key={s.label}>
                   <div className="scaleIcon"><Icon aria-hidden="true" strokeWidth={1.8} /></div>
                   <div className="scaleCardBody">
-                    <b className={s.value.length > 7 ? "scaleValueLong" : ""}>{s.value}</b>
+                    <b>{s.value}</b>
                     <h3>{s.label}</h3>
                     <i />
                     <small>{s.note}</small>

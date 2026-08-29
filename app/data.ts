@@ -17,7 +17,7 @@ export const event = {
   message: "Nơi bạn được nhìn thấy",
   sessionOne: "Chờ Ban Tổ chức xác nhận",
   sessionTwo: "Chờ Ban Tổ chức xác nhận",
-  email: "t.sv@vlu.edu.vn",
+  email: "hien.nguyen@vlu.edu.vn",
   phone: "0387 803 483",
   website: "www.vlu.edu.vn",
 };
