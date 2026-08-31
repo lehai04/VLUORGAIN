@@ -2474,3 +2474,7 @@ h1 { line-height: 1.5 !important; }
   }
 }
 
+/* Landing page no longer reserves space for the removed draft banner. */
+header {
+  top: 0;
+}

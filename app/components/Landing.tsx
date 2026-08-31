@@ -25,7 +25,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { CalendarDays, ChartNoAxesCombined, GraduationCap, Handshake, Star, Users } from "lucide-react";
-import { SITE_MODE, audiences, communityImages, event, images, journeyItems, stats, timeline } from "../data";
+import { audiences, communityImages, event, images, journeyItems, stats, timeline } from "../data";
 import PartnershipDesign from "./PartnershipDesign";
 import BrandSpaceSection from "./BrandSpaceSection";
 import PriorityResourceSection from "./PriorityResourceSection";
@@ -68,9 +68,6 @@ export default function Landing() {
 
   return (
     <main>
-      {/* Banner chế độ nội bộ */}
-      {SITE_MODE === "internal" && <div className="draft">DỰ THẢO · KHÔNG PHÁT HÀNH</div>}
-
       {/* 00. HERO SECTION (CINEMATIC EVENT BANNER & TOP NAVIGATION) */}
       <HeroSection />
 
