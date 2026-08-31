@@ -231,21 +231,6 @@ export default function ContactSection() {
                 aria-hidden="true"
               />
 
-              {/* Logo VLU Mounted on Building Facade covering the old sign */}
-              <div
-                className="absolute top-[23%] left-[52%] sm:top-[22%] sm:left-[51%] transform -translate-x-1/2 -translate-y-1/2 z-10 flex items-center bg-[#D71920] px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl shadow-xl border border-white/20"
-                aria-hidden="true"
-              >
-                <Image
-                  src="/images/hoi-khai-giang-2025/Lpgo_VLU.png"
-                  alt="VLU Logo"
-                  width={150}
-                  height={40}
-                  unoptimized
-                  className="h-5 sm:h-7 w-auto object-contain brightness-0 invert"
-                />
-              </div>
-
               {/* Top-Right Floating Quote Box (Bo lệch góc dưới trái) */}
               <div
                 className="absolute top-0 right-0 w-[170px] sm:w-[220px] md:w-[280px] p-4 sm:p-6 md:p-8 bg-[rgba(255,255,255,0.88)] backdrop-blur-md z-10"

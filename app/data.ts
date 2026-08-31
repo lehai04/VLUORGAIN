@@ -35,7 +35,7 @@ export const images = {
 
 // 3. SECTION 02: 6 THÔNG SỐ QUY MÔ SỰ KIỆN TRONG NHỮNG CON SỐ
 export const stats = [
-  { label: "Người tham dự", value: "10.000+", note: "Quy mô dự kiến trong hai ngày tổ chức" },
+  { label: "Người tham dự", value: "7.000+", note: "Quy mô dự kiến trong hai ngày tổ chức" },
   { label: "Tân sinh viên Khóa 32", value: "7.000+", note: "Nhân vật trung tâm của Hội Khai giảng" },
   { label: "Khách mời và đại diện đối tác", value: "300+", note: "Lãnh đạo, giảng viên, khách mời, doanh nghiệp và tổ chức đồng hành" },
   { label: "Cụm hoạt động trải nghiệm", value: "04", note: "Câu lạc bộ · Ẩm thực · Thử thách · Nghệ thuật" },
