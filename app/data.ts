@@ -9,7 +9,7 @@
  */
 
 // Chế độ hiển thị: "internal" (bản dự thảo nội bộ có watermark) hoặc "public" (bản chính thức phát hành)
-export const SITE_MODE: "internal" | "public" = "internal";
+export const SITE_MODE: "internal" | "public" = "public";
 
 // 1. THÔNG TIN CỐT LÕI CỦA SỰ KIỆN HỘI KHAI GIẢNG 2026
 export const event = {
@@ -20,7 +20,7 @@ export const event = {
   location: "Cơ sở chính Trường Đại học Văn Lang, 69/68 Đặng Thuỳ Trâm, Phường Bình Lợi Trung",
   email: "hien.nguyen@vlu.edu.vn",
   phone: "0387 803 483",
-  website: "www.vlu.edu.vn",
+  website: "hoikhaigiang2026vlu.vn",
 };
 
 // 2. TẬP HỢP ĐƯỜNG DẪN MEDIA & HÌNH ẢNH TOÀN TRANG
@@ -33,10 +33,9 @@ export const images = {
   stage: "/images/hoi-khai-giang-2025/bieu-dien-san-khau.webp",
 };
 
-// 3. SECTION 02: 6 THÔNG SỐ QUY MÔ SỰ KIỆN TRONG NHỮNG CON SỐ
+// 3. SECTION 02: CÁC THÔNG SỐ QUY MÔ SỰ KIỆN TRONG NHỮNG CON SỐ
 export const stats = [
   { label: "Người tham dự", value: "7.000+", note: "Quy mô dự kiến trong hai ngày tổ chức" },
-  { label: "Tân sinh viên Khóa 32", value: "7.000+", note: "Nhân vật trung tâm của Hội Khai giảng" },
   { label: "Khách mời và đại diện đối tác", value: "300+", note: "Lãnh đạo, giảng viên, khách mời, doanh nghiệp và tổ chức đồng hành" },
   { label: "Cụm hoạt động trải nghiệm", value: "04", note: "Câu lạc bộ · Ẩm thực · Thử thách · Nghệ thuật" },
   { label: "Ngày tổ chức", value: "02", note: "Ngày 26–27/09/2026" },

@@ -7,6 +7,7 @@
  * ==============================================================================
  */
 
+import Link from "next/link";
 import { SITE_MODE, packages, timeline } from "../data";
 
 // Mỗi dòng: đối tác, ngành, ưu tiên, người phụ trách, deadline và trạng thái.
@@ -32,7 +33,7 @@ const owners = [
 
 // Những vấn đề cần cấp quản lý xác nhận trước khi phát hành proposal.
 const approvalItems = [
-  "Quy mô: 10.000+ người, gồm 7.000+ tân sinh viên",
+  "Quy mô: 7.000+ người tham dự",
   "Ngày tổ chức dự kiến 26–27/09/2026; thời gian và địa điểm từng ngày chờ xác nhận",
   "Mục tiêu vận động từ 500 triệu đồng; cơ cấu hiện kim, hiện vật và dịch vụ chờ xác nhận",
   "05 gói P1–P5: 300 / 200 / 100 / 50 / 30 triệu đồng",
@@ -69,7 +70,7 @@ export default function Page() {
       <main className="locked">
         <h1>Không khả dụng</h1>
         <p>Trang nội bộ đã tắt trong chế độ Partner/Public.</p>
-        <a href="/">Về trang chính</a>
+        <Link href="/">Về trang chính</Link>
       </main>
     );
   }
@@ -79,7 +80,7 @@ export default function Page() {
       {/* 1. Thanh cảnh báo tài liệu nội bộ và lối quay về landing page. */}
       <div className="internalTop">
         <span>DỰ THẢO · KHÔNG PHÁT HÀNH</span>
-        <a href="/">← Trang đối tác</a>
+        <Link href="/">← Trang đối tác</Link>
       </div>
 
       {/* 2. Mở đầu: giải thích trạng thái phê duyệt hiện tại. */}

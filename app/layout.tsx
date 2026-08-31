@@ -11,7 +11,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.vlu.edu.vn"),
+  metadataBase: new URL("https://hoikhaigiang2026vlu.vn"),
   title: "CONVOCATION DAY 2026 | Hội Khai giảng Trường Đại học Văn Lang",
   description: "CONVOCATION DAY 2026 – Hội Khai giảng Trường Đại học Văn Lang. Nơi bạn được nhìn thấy.",
   alternates: {
@@ -51,4 +51,3 @@ export default function RootLayout({
     </html>
   );
 }
-

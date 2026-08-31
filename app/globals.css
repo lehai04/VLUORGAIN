@@ -2478,3 +2478,42 @@ h1 { line-height: 1.5 !important; }
 header {
   top: 0;
 }
+
+.siteFooter {
+  justify-content: center;
+  text-align: center;
+}
+
+.siteFooter b {
+  color: #ffffff;
+  letter-spacing: 0.08em;
+}
+
+@media (min-width: 1200px) {
+  .scaleGrid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .scaleCard {
+    grid-column: span 2;
+  }
+
+  .scaleCard:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .scaleCard:last-child:nth-child(odd) {
+    width: calc(50% - 8px);
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .scaleCard:last-child:nth-child(odd) {
+    width: auto;
+    grid-column: auto;
+  }
+}

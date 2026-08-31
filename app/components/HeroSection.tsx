@@ -219,7 +219,7 @@ export default function HeroSection() {
 
           {/* Descriptive Copy */}
           <p className="anim-desc text-white/80 text-[15px] sm:text-[16.5px] leading-[1.65] max-w-[580px] mb-6 sm:mb-8 font-normal italic">
-            Đồng hành cùng Văn Lang kiến tạo một khởi đầu đáng nhớ, kết nối thương hiệu với hơn 10.000 người tham dự và cộng đồng sinh viên trẻ, năng động.
+            Đồng hành cùng Văn Lang kiến tạo một khởi đầu đáng nhớ, kết nối thương hiệu với hơn 7.000 người tham dự và cộng đồng sinh viên trẻ, năng động.
           </p>
 
           {/* SECONDARY CTA (Sleek Editorial Text Link with Interactive Arrow) */}
@@ -296,7 +296,7 @@ export default function HeroSection() {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="text-white font-extrabold text-[15px] sm:text-[16.5px] tracking-tight leading-tight">
-                  10.000+
+                  7.000+
                 </div>
                 <div className="text-[#98A2B3] text-[11.5px] sm:text-[12px] mt-0.5 sm:mt-1 font-medium leading-snug">
                   Người tham dự

@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/internal-review/"],
     },
-    sitemap: "https://www.vlu.edu.vn/sitemap.xml",
+    sitemap: "https://hoikhaigiang2026vlu.vn/sitemap.xml",
   };
 }

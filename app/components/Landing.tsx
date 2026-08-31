@@ -24,8 +24,8 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { CalendarDays, ChartNoAxesCombined, GraduationCap, Handshake, Star, Users } from "lucide-react";
-import { audiences, communityImages, event, images, journeyItems, stats, timeline } from "../data";
+import { CalendarDays, ChartNoAxesCombined, Handshake, Star, Users } from "lucide-react";
+import { audiences, communityImages, images, journeyItems, stats } from "../data";
 import PartnershipDesign from "./PartnershipDesign";
 import BrandSpaceSection from "./BrandSpaceSection";
 import PriorityResourceSection from "./PriorityResourceSection";
@@ -33,8 +33,8 @@ import PartnershipSection from "./partnership/PartnershipSection";
 import ContactSection from "./ContactSection";
 import HeroSection from "./HeroSection";
 
-// Icon cho 6 thẻ thống kê quy mô Section 02
-const statIcons = [Users, GraduationCap, Handshake, Star, CalendarDays, ChartNoAxesCombined];
+// Icon tương ứng với các thẻ thống kê quy mô Section 02
+const statIcons = [Users, Handshake, Star, CalendarDays, ChartNoAxesCombined];
 
 // Component tiêu đề dùng chung cho các section thông thường
 const SectionHead = ({ n, children, desc }: { n: string; children: React.ReactNode; desc?: string }) => (
@@ -200,7 +200,7 @@ export default function Landing() {
         </SectionHead>
         <div className="dashboard">
           {[
-            ["10.000+", "Quy mô người tham dự"],
+            ["7.000+", "Quy mô người tham dự"],
             ["7.000+", "Tân sinh viên K32"],
             ["Theo gói", "Nội dung truyền thông"],
             ["Theo booth", "Lượt trải nghiệm"],
@@ -238,10 +238,8 @@ export default function Landing() {
       <ContactSection />
 
       {/* FOOTER */}
-      <footer>
+      <footer className="siteFooter">
         <b>VLU · HỘI KHAI GIẢNG 2026</b>
-        <p>Ảnh: Văn Lang TV — Hội Khai giảng và Chào đón Tân sinh viên Khóa 31 năm 2025.</p>
-        <p>© 2026 · Bản dự thảo phục vụ xem xét. Không tạo thành cam kết tài trợ.</p>
       </footer>
       <a className="totop" href="#top" aria-label="Về đầu trang">↑</a>
 
