@@ -43,7 +43,7 @@ export default function PackageMatrixTable() {
               <th className="th-id">MÃ</th>
               <th className="th-name">QUYỀN LỢI / ĐẦU RA</th>
               <th className="th-tier">P1 (300M)</th>
-              <th className="th-tier featured-col">P2 (200M)</th>
+              <th className="th-tier">P2 (200M)</th>
               <th className="th-tier">P3 (100M)</th>
               <th className="th-tier">P4 (50M)</th>
               <th className="th-tier">P5 (30M)</th>
@@ -75,7 +75,7 @@ export default function PackageMatrixTable() {
                 </td>
                 {/* Cột giá trị cho từng gói */}
                 <td className="td-p1">{row.p1}</td>
-                <td className="td-p2 featured-cell">{row.p2}</td>
+                <td className="td-p2">{row.p2}</td>
                 <td className="td-p3">{row.p3}</td>
                 <td className="td-p4">{row.p4}</td>
                 <td className="td-p5">{row.p5}</td>

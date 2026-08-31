@@ -201,7 +201,6 @@ export default function Landing() {
         <div className="dashboard">
           {[
             ["7.000+", "Quy mô người tham dự"],
-            ["7.000+", "Tân sinh viên K32"],
             ["Theo gói", "Nội dung truyền thông"],
             ["Theo booth", "Lượt trải nghiệm"],
             ["Thực tế", "Sản phẩm dùng thử"],

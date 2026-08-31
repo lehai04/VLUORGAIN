@@ -406,7 +406,7 @@ export default function ProposalOverviewModal({ isOpen, onClose, initialTab = "o
                     <th>MÃ</th>
                     <th>TIÊU CHÍ / ĐẦU RA</th>
                     <th>P1 (300M)</th>
-                    <th className="highlight-col">P2 (200M)</th>
+                    <th>P2 (200M)</th>
                     <th>P3 (100M)</th>
                     <th>P4 (50M)</th>
                     <th>P5 (30M)</th>
@@ -421,7 +421,7 @@ export default function ProposalOverviewModal({ isOpen, onClose, initialTab = "o
                         <small className="block text-muted">{row.appendixTerms}</small>
                       </td>
                       <td>{row.p1}</td>
-                      <td className="highlight-cell">{row.p2}</td>
+                      <td>{row.p2}</td>
                       <td>{row.p3}</td>
                       <td>{row.p4}</td>
                       <td>{row.p5}</td>

@@ -269,12 +269,12 @@ export default function ContactSection() {
 
               {/* Lower-Right Organic Flowing White Wave Shape with "VAN LANG UNIVERSITY" */}
               <div
-                className="absolute bottom-0 right-0 w-[180px] sm:w-[240px] md:w-[300px] h-[80px] sm:h-[100px] md:h-[120px] bg-gradient-to-t from-white via-white/95 to-transparent flex items-end justify-end p-4 sm:p-6 pr-6 sm:pr-8 z-10 pointer-events-none"
+                className="absolute bottom-0 right-0 w-[240px] sm:w-[300px] md:w-[360px] h-[90px] sm:h-[110px] md:h-[130px] bg-gradient-to-t from-white via-white/95 to-transparent flex items-end justify-end pb-5 sm:pb-7 md:pb-8 pr-9 sm:pr-12 md:pr-16 z-10 pointer-events-none"
                 style={{
                   borderRadius: "clamp(60px, 10vw, 100px) 0 0 0",
                 }}
               >
-                <span className="text-[#8E9CAE] font-bold text-[9.5px] sm:text-[11px] md:text-[12px] tracking-[0.16em] uppercase">
+                <span className="text-[#8E9CAE] font-bold text-[10px] sm:text-[11.5px] md:text-[12.5px] tracking-[0.16em] uppercase whitespace-nowrap">
                   VAN LANG UNIVERSITY
                 </span>
               </div>
