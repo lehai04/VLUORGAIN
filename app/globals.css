@@ -333,12 +333,13 @@ h1 { line-height: 1.5 !important; }
   align-items: center;
   gap: 14px;
   box-shadow: 0 2px 10px rgba(16, 26, 70, 0.03);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .ps-stat-badge:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(16, 26, 70, 0.06);
+  transform: translateY(-3px);
+  border-color: rgba(215, 33, 52, 0.38);
+  box-shadow: 0 10px 24px rgba(215, 33, 52, 0.08);
 }
 
 .ps-stat-val {
@@ -390,9 +391,9 @@ h1 { line-height: 1.5 !important; }
 }
 
 .ps-package-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 38px rgba(16, 26, 70, 0.1);
-  border-color: #D0D3E0;
+  transform: translateY(-5px);
+  box-shadow: 0 18px 42px rgba(215, 33, 52, 0.09), 0 4px 14px rgba(0, 0, 0, 0.04);
+  border-color: rgba(215, 33, 52, 0.4);
 }
 
 .ps-pkg-top {
@@ -544,6 +545,11 @@ h1 { line-height: 1.5 !important; }
   transition: background-color 0.2s, color 0.2s;
 }
 
+.ps-filter-tab:hover:not(.active) {
+  background: var(--vlu-red);
+  color: #ffffff;
+}
+
 .ps-filter-tab.active {
   background: var(--vlu-navy);
   color: #ffffff;
@@ -568,9 +574,9 @@ h1 { line-height: 1.5 !important; }
 }
 
 .ps-asset-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(16, 26, 70, 0.08);
-  border-color: #D0D3E0;
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(215, 33, 52, 0.08);
+  border-color: rgba(215, 33, 52, 0.38);
 }
 
 .ps-asset-card-top {
@@ -777,12 +783,13 @@ h1 { line-height: 1.5 !important; }
   display: flex;
   flex-direction: column;
   box-shadow: 0 2px 10px rgba(16, 26, 70, 0.03);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .ps-benefit-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(16, 26, 70, 0.08);
+  transform: translateY(-4px);
+  border-color: rgba(215, 33, 52, 0.38);
+  box-shadow: 0 14px 30px rgba(215, 33, 52, 0.08);
 }
 
 .ps-benefit-card-top {
@@ -965,12 +972,17 @@ h1 { line-height: 1.5 !important; }
   border: 1px solid var(--vlu-border);
   border-radius: 14px;
   overflow: hidden;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.ps-accordion-item:hover {
+  border-color: rgba(215, 33, 52, 0.35);
+  box-shadow: 0 8px 22px rgba(215, 33, 52, 0.06);
 }
 
 .ps-accordion-item.open {
-  border-color: #CBD0E2;
-  box-shadow: 0 4px 18px rgba(16, 26, 70, 0.05);
+  border-color: rgba(215, 33, 52, 0.45);
+  box-shadow: 0 6px 20px rgba(215, 33, 52, 0.07);
 }
 
 .ps-accordion-header {
@@ -1168,6 +1180,15 @@ h1 { line-height: 1.5 !important; }
   border-radius: 14px;
   padding: 12px 16px;
   align-items: flex-start;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+  cursor: default;
+}
+
+.ps-spirit-card:hover {
+  transform: translateY(-3px);
+  background: #ffffff;
+  border-color: rgba(215, 33, 52, 0.38);
+  box-shadow: 0 10px 24px rgba(215, 33, 52, 0.08);
 }
 
 .ps-spirit-number {
@@ -1270,8 +1291,9 @@ h1 { line-height: 1.5 !important; }
 }
 
 .ps-btn-navy:hover {
-  background: #0A112E;
-  box-shadow: 0 4px 14px rgba(16, 26, 70, 0.3);
+  background: var(--vlu-red);
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(215, 33, 52, 0.35);
 }
 
 .ps-btn-outline {
@@ -1281,8 +1303,10 @@ h1 { line-height: 1.5 !important; }
 }
 
 .ps-btn-outline:hover {
-  border-color: var(--vlu-navy);
-  background: #F5F6FA;
+  border-color: var(--vlu-red);
+  background: var(--vlu-red);
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(215, 33, 52, 0.28);
 }
 
 .ps-btn-ghost {
@@ -1292,8 +1316,10 @@ h1 { line-height: 1.5 !important; }
 }
 
 .ps-btn-ghost:hover {
-  color: var(--vlu-navy);
-  background: #ffffff;
+  color: #ffffff;
+  background: var(--vlu-red);
+  border-color: var(--vlu-red);
+  box-shadow: 0 4px 14px rgba(215, 33, 52, 0.25);
 }
 
 .ps-btn-full {
@@ -1901,13 +1927,13 @@ h1 { line-height: 1.5 !important; }
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
 }
 
 .ps-hub-action-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-  border-color: var(--vlu-red);
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(215, 33, 52, 0.1);
+  border-color: rgba(215, 33, 52, 0.45);
 }
 
 .ps-hub-card-icon {
@@ -2013,6 +2039,15 @@ h1 { line-height: 1.5 !important; }
   background: var(--vlu-bg-light);
   border-radius: 16px;
   border: 1px solid var(--vlu-border);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease, background-color 0.28s ease;
+  cursor: default;
+}
+
+.ps-principle-card:hover {
+  transform: translateY(-5px);
+  background: #ffffff;
+  border-color: rgba(215, 33, 52, 0.38);
+  box-shadow: 0 14px 32px rgba(215, 33, 52, 0.09);
 }
 
 .ps-principle-icon {
@@ -2025,6 +2060,14 @@ h1 { line-height: 1.5 !important; }
   display: grid;
   place-items: center;
   color: var(--vlu-red);
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.ps-principle-card:hover .ps-principle-icon {
+  background: var(--vlu-red);
+  color: #ffffff;
+  border-color: var(--vlu-red);
+  transform: scale(1.06);
 }
 
 .ps-principle-card h4 {
@@ -2078,8 +2121,9 @@ h1 { line-height: 1.5 !important; }
 }
 
 .ps-hub-tab:hover {
-  color: var(--vlu-navy);
-  border-color: rgba(11, 23, 57, 0.25);
+  background: var(--vlu-red);
+  color: #ffffff;
+  border-color: var(--vlu-red);
 }
 
 .ps-hub-tab.active {
@@ -2268,6 +2312,13 @@ h1 { line-height: 1.5 !important; }
   border: 1px solid var(--vlu-border);
   color: var(--vlu-text-secondary);
   cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.ps-hub-tier-btn:hover:not(.active) {
+  background: var(--vlu-red);
+  color: #ffffff;
+  border-color: var(--vlu-red);
 }
 
 .ps-hub-tier-btn.active {
@@ -2523,7 +2574,59 @@ header {
   }
 }
 
-/* 10. Dashboard 7-item staggered layout (4 trên, 3 dưới so le như mục 02) */
+/* 10. Dashboard 7-item staggered layout (4 trên, 3 dưới so le như mục 02, căn giữa nội dung) */
+.dashboard article {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid rgba(15, 25, 55, 0.08);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease, border-color 0.28s ease;
+  cursor: default;
+}
+
+.dashboard article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(215, 33, 52, 0.09), 0 4px 12px rgba(0, 0, 0, 0.04);
+  border-color: rgba(215, 33, 52, 0.32);
+}
+
+.dashboard b {
+  text-align: center;
+  font-size: 34px;
+  transition: transform 0.25s ease;
+}
+
+.dashboard article:hover b {
+  transform: scale(1.03);
+}
+
+.dashboard span {
+  text-align: center;
+  color: #555d70;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.dashboard i {
+  width: 32px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--r);
+  opacity: 0.65;
+  margin: 16px auto 0;
+  transition: width 0.28s ease, opacity 0.28s ease, transform 0.28s ease;
+}
+
+.dashboard article:hover i {
+  width: 52px;
+  opacity: 1;
+  transform: scaleX(1.05);
+}
+
 @media (min-width: 992px) {
   .dashboard {
     display: grid;

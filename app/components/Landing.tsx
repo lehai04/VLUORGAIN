@@ -200,17 +200,24 @@ export default function Landing() {
         </SectionHead>
         <div className="dashboard">
           {[
-            ["7.000+", "Quy mô người tham dự"],
-            ["Theo gói", "Nội dung truyền thông"],
-            ["Theo booth", "Lượt trải nghiệm"],
-            ["Thực tế", "Sản phẩm dùng thử"],
-            ["Đối soát", "Hiện kim & hiện vật"],
-            ["Theo hồ sơ thực tế", "Các quyền lợi đã thống nhất được ghi nhận và nghiệm thu"],
-            ["Theo thỏa thuận", "Báo cáo sau sự kiện"],
-          ].map((x) => (
-            <article className="reveal" key={x[1]}>
-              <b>{x[0]}</b>
-              <span>{x[1]}</span>
+            { value: "7.000+", label: <>Quy mô người tham dự</> },
+            { value: "Theo gói", label: <>Nội dung truyền thông</> },
+            { value: "Theo booth", label: <>Lượt trải nghiệm</> },
+            { value: "Thực tế", label: <>Sản phẩm dùng thử</> },
+            { value: "Đối soát", label: <>Hiện kim & hiện vật</> },
+            {
+              value: "Theo hồ sơ thực tế",
+              label: (
+                <>
+                  Các quyền lợi đã thống nhất<br />được ghi nhận và nghiệm thu
+                </>
+              ),
+            },
+            { value: "Theo thỏa thuận", label: <>Báo cáo sau sự kiện</> },
+          ].map((x, idx) => (
+            <article className="reveal" key={idx}>
+              <b>{x.value}</b>
+              <span>{x.label}</span>
               <i />
             </article>
           ))}
