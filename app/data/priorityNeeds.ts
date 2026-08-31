@@ -32,7 +32,7 @@ export const priorityItems: PriorityItem[] = [
     id: "02",
     title: "Nước uống & ẩm thực",
     description: "Sản phẩm phục vụ chương trình, đáp ứng yêu cầu an toàn và được BTC duyệt.",
-    image: "/images/hoi-khai-giang-2025/nuocuong.jpg",
+    image: "/images/hoi-khai-giang-2025/amthuc.jpg",
     alt: "Nước uống và ẩm thực phục vụ sự kiện Hội Khai giảng",
   },
   {

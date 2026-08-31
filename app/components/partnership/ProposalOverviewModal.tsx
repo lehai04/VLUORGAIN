@@ -464,7 +464,7 @@ export default function ProposalOverviewModal({ isOpen, onClose, initialTab = "o
                           <div><strong>Mục đích kiểm soát:</strong> {term.controlPurpose}</div>
                           <div><strong>Phạm vi:</strong> {term.scope}</div>
                           <div><strong>Cấp phê duyệt:</strong> {term.approver}</div>
-                          <div><strong>Đối tượng:</strong> {term.target}</div>
+                          <div><strong>Đối tượng:</strong> {term.appliedTo}</div>
                         </div>
                       </div>
                     )}
@@ -483,7 +483,10 @@ export default function ProposalOverviewModal({ isOpen, onClose, initialTab = "o
             <Download size={16} aria-hidden="true" />
             <span>Tải hồ sơ PDF đầy đủ ({partnershipStats[0].value} gói · {partnershipStats[1].value} quyền lợi)</span>
           </a>
-          <a className="ps-btn ps-btn-outline" href={`mailto:${event.email}`}>
+          <a
+            className="ps-btn ps-btn-outline"
+            href={`mailto:${event.email}?subject=${encodeURIComponent("Liên hệ Hội Khai giảng Văn Lang 2026")}`}
+          >
             <Mail size={16} aria-hidden="true" />
             <span>Liên hệ: {event.email}</span>
           </a>

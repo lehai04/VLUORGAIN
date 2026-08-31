@@ -2156,6 +2156,7 @@ h1 { line-height: 1.5 !important; }
 }
 
 .ps-hub-benefit-card {
+  flex-shrink: 0;
   padding: 18px;
   background: #ffffff;
   border: 1px solid var(--vlu-border);
@@ -2402,6 +2403,7 @@ h1 { line-height: 1.5 !important; }
 }
 
 .ps-hub-term-item {
+  flex-shrink: 0;
   border: 1px solid var(--vlu-border);
   border-radius: 14px;
   background: #ffffff;
@@ -2413,11 +2415,13 @@ h1 { line-height: 1.5 !important; }
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
   padding: 14px 18px;
   background: transparent;
   border: none;
   cursor: pointer;
   text-align: left;
+  line-height: 1.4;
 }
 
 .ps-hub-term-code {
@@ -2426,6 +2430,7 @@ h1 { line-height: 1.5 !important; }
   font-weight: 800;
   color: var(--vlu-red);
   margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .ps-hub-term-btn strong {

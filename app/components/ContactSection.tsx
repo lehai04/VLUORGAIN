@@ -88,7 +88,7 @@ export default function ContactSection() {
 
             {/* 4. Contact Person */}
             <p className="text-[#5A6A86] text-[16px] md:text-[17.5px] font-medium leading-relaxed mb-6 md:mb-7">
-              Đầu mối hợp tác · Nguyễn Thu Hiền · Trung tâm Hỗ trợ Sinh viên
+              Đầu mối liên hệ · Nguyễn Thu Hiền · Trung tâm Hỗ trợ Sinh viên
             </p>
 
             {/* 5. Tiêu đề thuần cho nhóm thông tin, không phải button hoặc liên kết. */}
@@ -106,7 +106,7 @@ export default function ContactSection() {
                 <div>
                   <span className="block text-[#60708A] text-[13px] leading-tight">Email:</span>
                   <a
-                    href={`mailto:${event.email}`}
+                    href={`mailto:${event.email}?subject=${encodeURIComponent("Liên hệ Hội Khai giảng Văn Lang 2026")}`}
                     className="text-[#1A3155] font-semibold text-[15.5px] md:text-[16px] hover:text-[#E52C47] transition-colors"
                   >
                     {event.email}
